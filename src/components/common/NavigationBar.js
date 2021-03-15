@@ -47,25 +47,51 @@ export default class NavigationBar extends Component{
                                     <li className="nav-item active">
                                         <a className="nav-link font-weight-bold"
                                            href="#">
-                                            About
+                                            Home
                                         </a>
                                     </li>
-                                    <li className="nav-item">
+                                    {/*<li className="nav-item active">*/}
+                                    {/*    <a className="nav-link font-weight-bold"*/}
+                                    {/*       href="#">*/}
+                                    {/*        Facilities*/}
+
+                                    {/*    <li className="nav-item">*/}
+                                    {/*        <a className="nav-link font-weight-bold"*/}
+                                    {/*           href="#">*/}
+                                    {/*            Land Value Prediction*/}
+                                    {/*        </a>*/}
+                                    {/*    </li>*/}
+                                    {/*    </a>*/}
+                                    {/*</li>*/}
+                                    <li class="dropdown show">
+                                        <button  className="nav-item active"
+                                                data-toggle="dropdown" type="button">
+
+                                            <a className="nav-link font-weight-bold"
+                                               href="#">
+                                                Dropdown
+                                            </a>
+                                            <a className="dropdown-item" href="#">First Item</a><a
+                                            className="dropdown-item" href="#">Second Item</a><a
+                                            className="dropdown-item" href="#">Third Item</a>
+                                        </button>
+                                    </li>
+                                    <li className="nav-item active">
                                         <a className="nav-link font-weight-bold"
                                            href="#">
-                                            Work
+                                            User Profile
                                         </a>
                                     </li>
-                                    <li className="nav-item">
+                                    <li className="nav-item active">
                                         <a className="nav-link font-weight-bold"
                                            href="#">
-                                            Portfolio
+                                            Login
                                         </a>
                                     </li>
-                                    <li className="nav-item">
+                                    <li className="nav-item active">
                                         <a className="nav-link font-weight-bold"
                                            href="#">
-                                            Contact
+                                            Guide
                                         </a>
                                     </li>
                                 </ul>

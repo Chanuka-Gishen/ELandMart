@@ -17,7 +17,7 @@ function App() {
             {/*<AlertAnimation/>*/}
             <Router>
             <Switch>
-                <Route path="/" exact component={NavigationBar}/>
+                {/*<Route path="/" exact component={NavigationBar}/>*/}
                 <Route path="/login" exact component={Login}/>
             </Switch>
             </Router>

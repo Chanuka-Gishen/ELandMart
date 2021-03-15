@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import logo from "../assets/images/logo.png";
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../assets/css/animate.min.css";
 import "../assets/css/OcOrato---Login-form.css";
