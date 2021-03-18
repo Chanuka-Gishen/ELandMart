@@ -1,6 +1,6 @@
 import React, {Component} from "react"
 import lottie from "lottie-web";
-import alert from "../animations/alert.json";
+import alert from "./alert.json";
 export default class AlertAnimation extends Component{
     constructor(props) {
         super(props);
