@@ -2,7 +2,7 @@
   /* Add padding to containers */
   .container {
     padding: 16px;
-    background-color: rgb(252, 252, 252);
+    /*background-color: rgb(252, 252, 252);*/
   }
   
   /* Full-width input fields */

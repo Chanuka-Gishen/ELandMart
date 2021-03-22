@@ -1,31 +1,22 @@
 import React, {Component} from "react";
 import NavigationBar from "../commonComponents/NavigationBar";
 import '../../App.css';
-import Cards from '../Cards/Cards';
-import HeroSection from "../HeroSection/HeroSection";
+import Cards from './Cards/Cards';
+import HeroSection from "./HeroSection/HeroSection";
 
-
-function Home() {
-    return (
-      <>
-      <div>
+export default class HomePage extends Component{
+    render() {
+        return(
+            <div style={{zIndex:'initial'}}>
                 <NavigationBar/>
-              
+                <div style={{marginRight:'-12%',marginLeft:'-12%'}}>
+                    <HeroSection/>
+                    {
+                        <Cards/>
+                    }
                 </div>
-            <div>
-        <HeroSection />
-        </div>
-        { <Cards />
-        
-        }
-            
-                    <p>
-                        Kazun, Charith & Avishka discuss add get final design idea of this page.
-                        Complete this task first of all..fdfdf..
-
-                    </p>
-              
-            </>
-        );
+            </div>
+        )
     }
-    export default Home;
+}
+

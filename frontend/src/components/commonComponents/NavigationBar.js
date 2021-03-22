@@ -8,10 +8,11 @@ import AlertAnimation from "./animations/AlertAnimation";
 import { Link } from 'react-router-dom';
 
 export default class NavigationBar extends Component {
+    index;
     render() {
         return(
-            <div className="header2 bg-success-gradiant" style={{marginLeft:'-12%',marginRight:'-12%'}}>
-                <div className="" >
+            <div className="header2 bg-success-gradiant" style={{marginRight:'0%',marginLeft:'0%'}}>
+                <div className="">
                     <nav className="navbar navbar-expand-lg h2-nav">
                         <a className="navbar-brand" href="#">
                             <img
