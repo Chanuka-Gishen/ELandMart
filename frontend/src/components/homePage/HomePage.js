@@ -1,19 +1,30 @@
 import React, {Component} from "react";
 import NavigationBar from "../commonComponents/NavigationBar";
-export default class HomePage extends Component{
-    render() {
-        return(
-            <div>
+import '../../App.css';
+import Cards from '../Cards/Cards';
+import HeroSection from "../HeroSection/HeroSection";
+// import Footer from '../Footer';
+
+function Home() {
+    return (
+      <>
+      <div>
                 <NavigationBar/>
-                <div>
+              
+                </div>
+            
+        <HeroSection />
+        { <Cards />
+        // <Footer />
+        }
+            
                     <p>
                         Kazun, Charith & Avishka discuss add get final design idea of this page.
-                        Complete this task first of all....
+                        Complete this task first of all..fdfdf..
 
                     </p>
-                </div>
-            </div>
-
+              
+            </>
         );
     }
-}
+    export default Home;
