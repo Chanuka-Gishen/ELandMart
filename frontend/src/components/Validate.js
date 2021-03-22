@@ -26,7 +26,7 @@ export default class Validate extends Component {
 
                       <button type="submit" class="validatebtn">Validate</button>
 
-                      
+                      <p>Chanuka here is your p tag</p>
 
 
                     </div>
