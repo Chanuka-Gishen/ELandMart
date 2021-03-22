@@ -2,10 +2,23 @@ import React, {Component} from "react";
 import "./Validate.css";
 export default class Validate extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = { apiResponse: "" };
+    }
+    
+    callAPI() {
+        fetch("http://localhost:9000/testAPI")
+            .then(res => res.text())
+            .then(res => this.setState({ apiResponse: res }));
+    }
+    
+    componentWillMount() {
+        this.callAPI();
+    }
+
     render() {
         return (
-
-            
             <div>
                 <form >
                     <div class="container">
@@ -26,7 +39,7 @@ export default class Validate extends Component {
 
                       <button type="submit" class="validatebtn">Validate</button>
 
-                      <p>Chanuka here is your p tag</p>
+                      <p className="App-intro">;{this.state.apiResponse}</p>
 
 
                     </div>
