@@ -1,39 +1,36 @@
-import logo from "./logo.svg";
-import "./App.css";
-import NavigationBar from "./components/common/NavigationBar";
-import AlertAnimation from "./components/animations/AlertAnimation";
-import Login from "./components/Login";
-import Validate from "./components/Validate";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import './App.css';
+import NavigationBar from "./components/commonComponents/NavigationBar";
+import AboutUs from "./components/aboutUsPage/AboutUs";
+import FeaturesPage from "./components/featuresPage/FeaturesPage";
+import HelpPage from "./components/helpPage/HelpPage";
+import HomePage from "./components/homePage/HomePage";
+import LoginPage from "./components/loginPage/LoginPage";
+import SignInPage from "./components/signInPage/SignInPage";
+import SiteMapPage from "./components/siteMapPage/SiteMapPage";
+import {
+  BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      {/*<AlertAnimation/>*/}
-      <Router>
-        <div>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/login">Login</Link>
-            </li>
-            <li>
-              <Link to="/Validate">Validate</Link>
-            </li>
-          </ul>
-
+      <div className="app">
+        <Router>
           <Switch>
-            <Route path="/" exact component={NavigationBar}></Route>
-            <Route path="/login" exact component={Login} />
-            <Route path="/Validate" exact component={Validate} />
+              <Route path="/navbar" exact component={NavigationBar}/>
+              <Route path="/aboutUs" exact component={AboutUs}/>
+              <Route path="/featurePage" exact component={FeaturesPage}/>
+              <Route path="/helpPage" exact component={HelpPage}/>
+              <Route path="/homePage" exact component={HomePage}/>
+              <Route path="/login" component={LoginPage}/>
+              <Route path="/sign" exact component={SignInPage}/>
+              <Route path="/siteMap" exact component={SiteMapPage}/>
           </Switch>
-        </div>
-      </Router>
-      {/*<Login/>*/}
-      {/*<NavigationBar/>*/}
-    </div>
+        </Router>
+      </div>
   );
 }
 
