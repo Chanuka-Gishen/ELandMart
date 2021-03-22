@@ -11,30 +11,34 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='Images/img-2.jpg'
-              text='Explore the hidden waterfall deep inside the Amazon Jungle'
+              text='Land  for sale In Homagama'
+              label='LKR.700000 per Perch'
               path='/services'
             />
             <CardItem
               src='Images/img-1.jpg'
-              text='Travel through the Islands of Bali in a Private Cruise'
-              label='Luxury'
+              text='Land For sale in Thabuththegamuwa'
+              label='LKR.180000 per Perch'
               path='/services'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
               src='Images/img-3.jpg'
-              text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
+              text='Land for sale in Thalawathugoda with Utilitiy Facilities'
+              label='LKR.500000 per Perch'
               path='/services'
             />
             <CardItem
               src='Images/img-4.jpg'
-              text='Experience Football on Top of the Himilayan Mountains'
+              text='Cocount Tree Land for sale in Galle'
+              label='LKR.200000 per Perch'
               path='/products'
             />
             <CardItem
               src='Images/img-5.jpg'
-              text='Ride through the Sahara Desert on a guided camel tour'
+              text='Paddy Field for Sale in Kurudughahettakma '
+              label='LKR.180000 per Perch'
               path='/sign-up'
             />
           </ul>

@@ -3,7 +3,7 @@ import NavigationBar from "../commonComponents/NavigationBar";
 import '../../App.css';
 import Cards from '../Cards/Cards';
 import HeroSection from "../HeroSection/HeroSection";
-// import Footer from '../Footer';
+
 
 function Home() {
     return (
@@ -12,10 +12,11 @@ function Home() {
                 <NavigationBar/>
               
                 </div>
-            
+            <div>
         <HeroSection />
+        </div>
         { <Cards />
-        // <Footer />
+        
         }
             
                     <p>
