@@ -7,6 +7,7 @@ import HomePage from "./components/homePage/HomePage";
 import LoginPage from "./components/loginPage/LoginPage";
 import SignInPage from "./components/signInPage/SignInPage";
 import SiteMapPage from "./components/siteMapPage/SiteMapPage";
+import Validate from "./components/validatePage/Validate";
 import {
   BrowserRouter as Router,
     Switch,
@@ -28,6 +29,7 @@ function App() {
               <Route path="/login" component={LoginPage}/>
               <Route path="/sign" exact component={SignInPage}/>
               <Route path="/siteMap" exact component={SiteMapPage}/>
+              <Route path="/validate" exact component={Validate}/>
           </Switch>
         </Router>
       </div>

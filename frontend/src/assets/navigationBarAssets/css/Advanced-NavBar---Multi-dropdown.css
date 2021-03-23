@@ -2,10 +2,16 @@
   font-family: "Montserrat", sans-serif;
   color: #171a1d;
   font-weight: 300;
+
 }
 
 .header2.bg-success-gradiant {
   background: lightgray;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
   /*background: -webkit-linear-gradient(legacy-direction(to right), #2cdd9b 0%, #1dc8cc 100%);*/
   /*background: -webkit-gradient(linear, left top, right top, from(#2cdd9b), to(#1dc8cc));*/
   /*background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);*/
