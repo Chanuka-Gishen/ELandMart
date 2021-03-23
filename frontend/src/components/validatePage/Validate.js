@@ -39,7 +39,7 @@ export default class Validate extends Component {
 
                       <button type="submit" class="validatebtn">Validate</button>
 
-                      <p className="App-intro">;{this.state.apiResponse}</p>
+                      <p className="App-intro">{this.state.apiResponse}</p>
 
 
                     </div>
