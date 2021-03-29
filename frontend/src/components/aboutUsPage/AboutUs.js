@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import NavigationBar from "../commonComponents/NavigationBar";
 import "../../assets/aboutUsAssets/bootstrap/css/bootstrap.min.css";
-import "../../assets/css/styles.css";
+import "../../assets/aboutUsAssets/css/styles.css";
 // import "../../assets/aboutUsAssets/fonts/font-awesome.min.css";
 import "../../assets/aboutUsAssets/css/Team-Boxed.css";
 export default class AboutUs extends Component{

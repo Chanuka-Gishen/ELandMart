@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-
 import "./../../assets/navigationBarAssets/bootstrap/css/bootstrap.min.css";
 import "./../../assets/navigationBarAssets/fonts/simple-line-icons.min.css";
 import "./../../assets/navigationBarAssets/css/Advanced-NavBar---Multi-dropdown.css";
 import "./../../assets/navigationBarAssets/css/styles.css";
-import AlertAnimation from "./animations/AlertAnimation";
 import { Link } from 'react-router-dom';
+import logo from "../../assets/loginPageAssets/img/logo.png";
 
 export default class NavigationBar extends Component {
     index;
@@ -14,12 +13,19 @@ export default class NavigationBar extends Component {
             <div className="header2 bg-success-gradiant" style={{marginRight:'0%',marginLeft:'0%'}}>
                 <div className="">
                     <nav className="navbar navbar-expand-lg h2-nav">
+                        <div
+                            style={{width:'15%',
+                                height:'auto',
+                                marginRight:'-7%',
+                                marginLeft:'-2%',
+                                padding:'0',
+                                position:'relative'}}>
                         <a className="navbar-brand" href="#">
-                            <img
-                            src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/logos/white-logo.png"
-                            alt="wrapkit"/>
-                               {/* <AlertAnimation/>*/}
+                            <img className="rounded img-fluid pulse animated"
+                                 id="image"
+                                 src={logo} alt="Logo"/>
                         </a>
+                        </div>
                         <button
                             className="navbar-toggler"
                             type="button"

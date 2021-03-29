@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import "./Validate.css";
+import "../../assets/validatePageAssets/Validate.css";
 export default class Validate extends Component {
 
     constructor(props) {

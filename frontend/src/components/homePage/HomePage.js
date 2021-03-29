@@ -11,9 +11,7 @@ export default class HomePage extends Component{
                 <NavigationBar/>
                 <div style={{marginRight:'-12%',marginLeft:'-12%'}}>
                     <HeroSection/>
-                    {
                         <Cards/>
-                    }
                 </div>
             </div>
         )

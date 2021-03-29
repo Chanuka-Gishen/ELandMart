@@ -23,6 +23,8 @@
   
   .cards__items {
     margin-bottom: 24px;
+    z-index: 1;
+    position: relative;
   }
   
   .cards__item {

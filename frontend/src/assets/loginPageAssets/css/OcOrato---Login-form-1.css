@@ -3,12 +3,14 @@
   width: 90%;
   position: relative;
   left: 50%;
-  top: 10%;
+  top: 5vh;
   padding: 40px;
   border-radius: 4px;
   transform: translate(-50%, 10%);
   color: #fff;
   box-shadow: 3px 3px 4px rgba(0,0,0,0.2);
+
+
 }
 
 #head {
@@ -21,6 +23,7 @@
   padding: 10px;
   max-height: 175px;
   max-width: 175px;
+  margin-left: 15%;
 }
 
 #linkas {
@@ -58,10 +61,11 @@
 }
 
 body {
-  background-image: url("../images/Wallpapers 1366x768.jpg");
+  background-image: url("../../loginPageAssets/img/Wallpapers 1366x768.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: auto;
   width: auto;
+
 }
 
