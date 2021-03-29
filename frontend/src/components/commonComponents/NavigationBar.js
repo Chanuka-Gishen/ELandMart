@@ -5,6 +5,7 @@ import "./../../assets/navigationBarAssets/css/Advanced-NavBar---Multi-dropdown.
 import "./../../assets/navigationBarAssets/css/styles.css";
 import { Link } from 'react-router-dom';
 import logo from "../../assets/loginPageAssets/img/logo.png";
+import HomePage from "../homePage/HomePage";
 
 export default class NavigationBar extends Component {
     index;
@@ -41,14 +42,11 @@ export default class NavigationBar extends Component {
                             className="collapse navbar-collapse hover-dropdown"
                             id="header2">
                             <ul className="navbar-nav">
-                                <li className="nav-item active">
+                                <li className="nav-item active" style={{zIndex:'3'}} >
                                     <a
                                         className="nav-link"
-                                        href="#">
-                                        <Link to="/homePage">
-                                            Home
-                                        </Link>
-
+                                        href={'/'}>
+                                        Home
                                     </a>
                                 </li>
                                 <li className="nav-item dropdown position-relative">
@@ -74,7 +72,7 @@ export default class NavigationBar extends Component {
                                         <li>
                                             <a
                                                 className="dropdown-item"
-                                                href="#">
+                                                href={'/validate'}>
                                                     Predict Land Value
                                             </a>
                                         </li>
@@ -99,24 +97,21 @@ export default class NavigationBar extends Component {
                                 <li className="nav-item">
                                     <a
                                         className="nav-link"
-                                        href="#">
-                                        <Link to="/aboutUs">
+                                        href={'/aboutUs'}>
                                             About Us
-                                        </Link>
-
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a
                                         className="nav-link"
-                                        href="#">
+                                        href={'#'}>
                                             Technologies
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a
                                         className="nav-link"
-                                        href="#">
+                                        href={'/siteMap'}>
                                             Site Map
                                     </a>
                                 </li>
@@ -125,7 +120,7 @@ export default class NavigationBar extends Component {
                                 <li className="nav-item active">
                                     <a
                                         className="nav-link"
-                                        href="#">
+                                        href={'/helpPage'}>
                                         <i className="icon-bubble"/>
                                             Need help?
                                     </a>
@@ -133,14 +128,14 @@ export default class NavigationBar extends Component {
                                 <li className="nav-item active">
                                     <a
                                         className="nav-link"
-                                        href="#">
+                                        href={'/login'}>
                                             Login
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a
                                         className="btn rounded-pill btn-dark py-2 px-4"
-                                        href="#">
+                                        href={'/sign'}>
                                         Sign up
                                     </a>
                                 </li>
