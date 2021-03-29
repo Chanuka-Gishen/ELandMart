@@ -1,5 +1,8 @@
 import React, {Component} from "react";
 import "../../assets/validatePageAssets/Validate.css";
+import NavigationBar from "../commonComponents/NavigationBar";
+import HeroSection from "../homePage/HeroSection/HeroSection";
+import Cards from "../homePage/Cards/Cards";
 export default class Validate extends Component {
 
     constructor(props) {
@@ -20,7 +23,9 @@ export default class Validate extends Component {
     render() {
         return (
             <div>
-                <form >
+                <NavigationBar/>
+            <div style={{marginTop:'10%'}}>
+                <form  >
                     <div class="container">
                        <h1>Land Value Calculation</h1> 
                        <p>Please enter your Land details to validate</p>
@@ -45,6 +50,7 @@ export default class Validate extends Component {
                     </div>
 
                 </form>
+            </div>
             </div>
         );
     }
