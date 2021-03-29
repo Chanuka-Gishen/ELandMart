@@ -22,11 +22,11 @@ export default class Validate extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{background:'white'}}>
                 <NavigationBar/>
-            <div style={{marginTop:'10%'}}>
-                <form  >
-                    <div class="container">
+            <div style={{marginTop:'8.9%',marginRight:'-12%',marginLeft:'-12%',backgroundColor:'white'}}>
+                <form>
+                    <div class="container" >
                        <h1>Land Value Calculation</h1> 
                        <p>Please enter your Land details to validate</p>
                       <hr/>

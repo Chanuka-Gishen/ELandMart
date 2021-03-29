@@ -25,9 +25,12 @@ export const Button = ({
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}
         type={type}
+        style={{color: 'white', fontWeight:'20'}}
       >
         {children}
       </button>
+
     </Link>
+
   );
 };

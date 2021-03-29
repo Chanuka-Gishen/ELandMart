@@ -14,7 +14,6 @@ function HeroSection() {
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
-          href={'/login'}
         >
           GET STARTED
         </Button>
@@ -25,6 +24,7 @@ function HeroSection() {
           onClick={console.log('hey')}
         >
          DISCOVER LAND <i className='far fa-play-circle' />
+
         </Button>
       </div>
     </div>

@@ -45,7 +45,7 @@ export default class LoginPage extends Component{
                                     marginBottom: '10px',
                                     backgroundColor: 'rgb(106,176,209)'
                                 }}
-                                type="button">Button
+                                type="button">LogIn
                         </button>
                         <a id="linkas"
                            style={{

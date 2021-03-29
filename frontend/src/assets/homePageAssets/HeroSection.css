@@ -35,10 +35,13 @@ video {
   
   .hero-btns {
     margin-top: 32px;
+
+
   }
   
   .hero-btns .btn {
     margin: 6px;
+
   }
   
   .fa-play-circle {
@@ -66,8 +69,11 @@ video {
       display: block;
       text-decoration: none;
     }
-  
+
     .btn {
       width: 100%;
+
+
     }
+
   }
