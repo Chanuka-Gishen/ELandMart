@@ -9,12 +9,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Getter
 @Setter
 @ToString
-@Document(collection = "User")
+@Document(collection = "UserDetails")
 public class User {
 
     @Id
-    private int id;
+    private int Id;
     private String UserName;
     private String Email;
     private String Password;
+
 }
