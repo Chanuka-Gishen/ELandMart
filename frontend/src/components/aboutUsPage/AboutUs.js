@@ -4,6 +4,9 @@ import "../../assets/aboutUsAssets/bootstrap/css/bootstrap.min.css";
 import "../../assets/aboutUsAssets/css/styles.css";
 // import "../../assets/aboutUsAssets/fonts/font-awesome.min.css";
 import "../../assets/aboutUsAssets/css/Team-Boxed.css";
+import player from "../../assets/aboutUsAssets/img/player.jpg";
+import player2 from "../../assets/aboutUsAssets/img/player2.png";
+import player3 from "../../assets/aboutUsAssets/img/player3.jpg";
 export default class AboutUs extends Component{
     render() {
         return(
@@ -20,10 +23,13 @@ export default class AboutUs extends Component{
                             <div className="row people">
                                 <div className="col-md-6 col-lg-4 item">
                                     <div className="box">
-                                        {/*<img className="rounded-circle"*/}
-                                        {/*     src="assets/img/1.jpg">*/}
+
+                                        <img className="rounded-circle"
+                                             id="image"
+                                             src={player} alt={""}/>
+
                                         <h3 className="name">
-                                            Ben Johnson
+                                            Chanuka Mendis
                                         </h3>
                                         <p className="title">
                                             Musician
@@ -45,14 +51,14 @@ export default class AboutUs extends Component{
                                                 <i className="fa fa-instagram"/>
                                             </a>
                                         </div>
-                                    {/*</img>*/}
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-lg-4 item">
                                     <div className="box">
-                                        {/*<img className="rounded-circle"*/}
-                                        {/*     src="assets/img/2.jpg">*/}
-                                        <h3 className="name">Emily Clark</h3>
+                                        <img className="rounded-circle"
+                                             id="image"
+                                             src={player2} alt={""}/>
+                                        <h3 className="name">Charith Wellala</h3>
                                         <p className="title">Artist</p>
                                         <p className="description">Aenean tortor est, vulputate quis leo in, vehicula
                                             rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus
@@ -70,15 +76,15 @@ export default class AboutUs extends Component{
                                                 <i className="fa fa-instagram"/>
                                             </a>
                                         </div>
-                                    {/*</img>*/}
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-lg-4 item">
                                     <div className="box">
-                                        {/*<img className="rounded-circle"*/}
-                                        {/*     src="assets/img/3.jpg">*/}
+                                        <img className="rounded-circle"
+                                             id="image"
+                                        src={player3} alt={""}/>
                                         <h3 className="name">
-                                            Carl Kent
+                                            Avishka
                                         </h3>
                                         <p className="title">
                                             Stylist
@@ -100,7 +106,6 @@ export default class AboutUs extends Component{
                                                 <i className="fa fa-instagram"/>
                                             </a>
                                         </div>
-                                    {/*</img>*/}
                                     </div>
                                 </div>
                             </div>
