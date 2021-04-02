@@ -31,7 +31,7 @@ public class DatabaseController {
     @GetMapping("/getUser/{userName}")
     public boolean getUser(@PathVariable String userName){
         Query findUser = new Query().addCriteria(Criteria.where("UserName").is(userName));
-        
+
         return true;
     }
 

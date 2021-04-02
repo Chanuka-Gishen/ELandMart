@@ -10,6 +10,6 @@ public class TestApi {
 
     @RequestMapping("/api")
     public String testApi(){
-        return "Hello";
+        return "Server Running";
     }
 }

@@ -5,9 +5,12 @@ import HeroSection from "../homePage/HeroSection/HeroSection";
 import Cards from "../homePage/Cards/Cards";
 export default class Validate extends Component {
 
+     
+
     constructor(props) {
         super(props);
         this.state = { apiResponse: "" };
+
     }
     
     callAPI() {
