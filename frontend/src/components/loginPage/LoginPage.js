@@ -8,6 +8,15 @@ import "../../assets/loginPageAssets/css/styles.css";
 // import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
 // import "https://fonts.googleapis.com/css?family=Quicksand";
 export default class LoginPage extends Component{
+    constructor(props) {
+        super(props);
+        this.state = { save: "" };
+
+    }
+    callApi(){
+        const log = fetch("/save").then(res => res.text())
+        .then(res => this.setState({ save: res }));
+    }
     render() {
         return(
             <div >
