@@ -79,7 +79,7 @@ export default class NavigationBar extends Component {
                                         <li>
                                             <a
                                                 className="dropdown-item"
-                                                href="#">
+                                                href={'/loanCal'}>
                                                     Loan Calculator
                                             </a>
                                         </li>
