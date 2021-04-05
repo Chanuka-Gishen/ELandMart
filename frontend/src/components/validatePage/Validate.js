@@ -14,7 +14,7 @@ export default class Validate extends Component {
     }
     
     callAPI() {
-        fetch("http://localhost:8080/api")
+        fetch("/api")
             .then(res => res.text())
             .then(res => this.setState({ apiResponse: res }));
     }
