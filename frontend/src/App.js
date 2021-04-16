@@ -8,6 +8,8 @@ import LoginPage from "./components/loginPage/LoginPage";
 import SignInPage from "./components/signInPage/SignInPage";
 import SiteMapPage from "./components/siteMapPage/SiteMapPage";
 import Validate from "./components/validatePage/Validate";
+import ContactUs from "./components/contactUs/ContactUs";
+import LoanCalculatorPage from "./components/loanCalculatorPage/LoanCalculatorPage";
 import {
   BrowserRouter as Router,
     Switch,
@@ -30,6 +32,8 @@ function App() {
               <Route path="/sign" exact component={SignInPage}/>
               <Route path="/siteMap" exact component={SiteMapPage}/>
               <Route path="/validate" exact component={Validate}/>
+              <Route path="/contactUs" exact component={ContactUs}/>
+              <Route path="/loanCalculatorPage" exact component={LoanCalculatorPage}/>
           </Switch>
         </Router>
       </div>

@@ -9,8 +9,6 @@ export default class AboutUs extends Component{
         return(
             <div>
                         <NavigationBar/>
-<<<<<<< HEAD
-=======
                         <head>
                             <title>Calculator</title>
                             <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"></link>
