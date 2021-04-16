@@ -1,10 +1,11 @@
 import React, {Component} from "react";
-import "../../assets/loanCalculatorAssets/calculator.css.css";
 import NavigationBar from "../commonComponents/NavigationBar";
+import "../../assets/loanCalculatorAssets/bootstrap/css/bootstrap.min.css";
+import "../../assets/loanCalculatorAssets/bootstrap/js/bootstrap.min.js";
+import "../../assets/loanCalculatorAssets/css/styles.css";
+import "../../assets/loanCalculatorAssets/fonts/font-awesome.min.css";
+import "../../assets/loanCalculatorAssets/js/jquery.min";
 export default class LoanCalculatorPage extends Component{
-
-
-
 
     constructor(props) {
         super(props);
@@ -25,33 +26,26 @@ export default class LoanCalculatorPage extends Component{
         return (
             <div style={{background:'white'}}>
                 <NavigationBar/>
-                <div style={{marginTop:'8.9%',marginRight:'-12%',marginLeft:'-12%',backgroundColor:'white'}}>
-                    <form>
-                        <div class="container" >
-                            <h1>Land Value Calculation</h1>
-                            <p>Please enter your Land details to validate</p>
-                            <hr/>
-                            <label for ="landSize"> <b>Size Of the Land</b></label>
-                            <input type="int" placeholder="Enter the size in Perches" name="size" id="size" required/>
+                <body>
+            '    <form class="bootstrap-form-with-validation">'+
+                        <h2 class="text-center">Get Start with the Loan Calculator</h2>'+
+                <div class="form-group"><label for="text-input"><b> Price of the Land</b></label><input class="form-control" type="text" id="text-input" name="text-input"></input></div>
+                <div class="form-group"><label for="password-input"><b>Number of Installments</b></label><input class="form-control" type="password" id="password-input" name="password-input"></input></div>
+                <div class="form-group"><label for="email-input"><b>Interest Rate (%)</b></label><input class="form-control" type="email" id="email-input" name="email-input"></input></div>
+                <div class="form-group"><label for="textarea-input"><b>Property Tax</b></label><textarea class="form-control" id="textarea-input" name="textarea"></textarea></div>
 
-                            <label for ="landType"> <b>Land Type</b></label>
-                            <input type="text"  name="type" id="landType" required/>
+                <div className="form-group"><label>Payment Frequency</label></div>
+                                <div className="form-group">
+                                    <div className="form-check"><input type="radio" value="Weekly" name="gender" /> Weekly</div>
+                                    <div className="form-check"><input type="radio" value="Fortnightly" name="gender" /> Fortnightly</div>
+                                    <div className="form-check"><input type="radio" value="Monthly" name="gender" /> Monthly</div>
+                                </div>
 
-                            <label for ="distanceToRoad"> <b>Distance To The Main Road</b></label>
-                            <input type="int" placeholder="Enter the distence in meters" name="DistanceToRoad" id="distance" required/>
-
-                            <label for ="landLocation"> <b>Location</b></label>
-                            <input type="text"  name="Location" id="location" required/>
-
-                            <button type="submit" class="validatebtn">Validate</button>
-
-                            <p className="App-intro">{this.state.apiResponse}</p>
-
-
-                        </div>
-
-                    </form>
-                </div>
+                <div className="form-group">
+                                        <button className="btn btn-primary" type="submit">Calculate</button>
+                                    </div>
+            </form>
+                </body>
             </div>
         );
     }
