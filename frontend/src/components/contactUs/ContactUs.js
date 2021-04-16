@@ -9,6 +9,15 @@ export default class AboutUs extends Component{
         return(
             <div>
                         <NavigationBar/>
+<<<<<<< HEAD
+=======
+                        <head>
+                            <title>Calculator</title>
+                            <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"></link>
+                            <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css"></link>
+                            <link rel="stylesheet" href="assets/css/styles.css"></link>
+                        </head>
+>>>>>>> origin/main
 
                         <body>
                         <section class="contact-clean">
