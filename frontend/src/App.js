@@ -29,7 +29,7 @@ function App() {
               <Route path="/" exact component={HomePage}/>
               <Route path="/homePage" exact component={HomePage}/>
               <Route path="/login" component={LoginPage}/>
-              <Route path="/sign" exact component={SignInPage}/>
+              <Route path="/signInPage" exact component={SignInPage}/>
               <Route path="/siteMap" exact component={SiteMapPage}/>
               <Route path="/validate" exact component={Validate}/>
               <Route path="/contactUs" exact component={ContactUs}/>

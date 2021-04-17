@@ -135,8 +135,8 @@ export default class NavigationBar extends Component {
                                 <li className="nav-item">
                                     <a
                                         className="btn rounded-pill btn-dark py-2 px-4"
-                                        href={'/sign'}>
-                                        Sign up
+                                        href={'/SignInPage'}>
+                                        Sign In
                                     </a>
                                 </li>
                             </ul>
