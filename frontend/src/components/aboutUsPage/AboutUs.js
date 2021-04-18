@@ -87,7 +87,7 @@ export default class AboutUs extends Component{
                                              id="image"
                                         src={Avishka} alt={""}/>
                                         <h3 className="name">
-                                            <b>Avishka</b>
+                                            <b>Avishka Lakshan</b>
                                         </h3>
                                         <p className="title">
                                             Frontend Developer
@@ -111,8 +111,6 @@ export default class AboutUs extends Component{
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div>
                                 <div className="col-md-6 col-lg-4 item">
                                     <div className="box">
 
@@ -132,17 +130,7 @@ export default class AboutUs extends Component{
                                             est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper
                                             massa.
                                         </p>
-                                        <div className="social">
-                                            <a href="#">
-                                                <i className="fa fa-facebook-official"/>
-                                            </a>
-                                            <a href="#">
-                                                <i className="fa fa-twitter"/>
-                                            </a>
-                                            <a href="#">
-                                                <i className="fa fa-instagram"/>
-                                            </a>
-                                        </div>
+                            
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-lg-4 item">
