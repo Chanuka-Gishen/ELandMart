@@ -27,7 +27,7 @@ export default class LoanCalculatorPage extends Component{
             <div style={{background:'white'}}>
                 <NavigationBar/>
                 <body>
-            '    <form class="bootstrap-form-with-validation">'+
+            '    <form class="bootstrap-form-with-validation">
                         <h2 class="text-center">Get Start with the Loan Calculator</h2>
                 <div class="form-group"><label for="number"><b> Price of the Land</b></label><input class="form-control" type="number"  price="text-Input"></input></div>
                 <div class="form-group"><label for="number"><b>Number of Installments</b></label><input class="form-control" type="number" installments="text-Input"></input></div>
@@ -44,7 +44,7 @@ export default class LoanCalculatorPage extends Component{
                 <div className="form-group">
                                         <button className="btn btn-primary" type="submit">Calculate</button>
                                     </div>
-                <div class="form-group"><label for="number"><b>Loan</b></label><input class="form-control" type="number"  value="text-Input"></input></div>
+                <div class="form-group"><label for="number"><b>Loan amount</b></label><input class="form-control" type="number"  value="text-Input"></input></div>
 
             </form>
                 </body>
