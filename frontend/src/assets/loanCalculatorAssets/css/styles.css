@@ -1,0 +1,9 @@
+.bootstrap-form-with-validation {
+    position: relative;
+    bottom: -100px;
+    background: #fff;
+  }
+  .text-center{
+      padding-top: 2%;
+      padding-bottom: 2%;
+  }
