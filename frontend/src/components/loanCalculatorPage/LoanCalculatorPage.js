@@ -44,7 +44,7 @@ export default class LoanCalculatorPage extends Component{
                 <div className="form-group">
                                         <button className="btn btn-primary" type="submit">Calculate</button>
                                     </div>
-                <div class="form-group"><label for="number"><b>Loan</b></label><input class="form-control" type="number"  value="text-Input"></input></div>
+                <div class="form-group"><label for="number"><b>Loan Amount</b></label><input class="form-control" type="number"  value="text-Input"></input></div>
 
             </form>
                 </body>
