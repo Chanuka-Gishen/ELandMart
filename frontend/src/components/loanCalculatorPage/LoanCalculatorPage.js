@@ -24,7 +24,7 @@ export default class LoanCalculatorPage extends Component{
 
     render() {
         return (
-            <div style={{background:'white'}}>
+            <div class =" background" >
                 <NavigationBar/>
                 <body>
             '    <form class="bootstrap-form-with-validation">
