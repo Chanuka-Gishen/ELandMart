@@ -29,10 +29,10 @@ export default class LoanCalculatorPage extends Component{
                 <body>
             '    <form class="bootstrap-form-with-validation">'+
                         <h2 class="text-center">Get Start with the Loan Calculator</h2>
-                <div class="form-group"><label for="text-input"><b> Price of the Land</b></label><input class="form-control" type="text" id="text-input" name="text-input"></input></div>
-                <div class="form-group"><label for="password-input"><b>Number of Installments</b></label><input class="form-control" type="password" id="password-input" name="password-input"></input></div>
-                <div class="form-group"><label for="email-input"><b>Interest Rate (%)</b></label><input class="form-control" type="email" id="email-input" name="email-input"></input></div>
-                <div class="form-group"><label for="textarea-input"><b>Property Tax</b></label><textarea class="form-control" id="textarea-input" name="textarea"></textarea></div>
+                <div class="form-group"><label for="number"><b> Price of the Land</b></label><input class="form-control" type="number"  price="text-Input"></input></div>
+                <div class="form-group"><label for="number"><b>Number of Installments</b></label><input class="form-control" type="number" installments="text-Input"></input></div>
+                <div class="form-group"><label for="number"><b>Interest Rate (%)</b></label><input class="form-control" type="number"  rate="text-Input"></input></div>
+                <div class="form-group"><label for="number"><b>Property Tax</b></label><input class="form-control" type="number"  tax="text-Input"></input></div>
 
                 <div className="form-group"><label>Payment Frequency</label></div>
                                 <div className="form-group">

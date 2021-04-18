@@ -16,12 +16,12 @@ export default class NavigationBar extends Component {
                     <nav className="navbar navbar-expand-lg h2-nav">
                         <div
                             style={{width:'15%',
-                                height:'auto',
+                                height:'auto%',
                                 marginRight:'-7%',
                                 marginLeft:'-2%',
                                 padding:'0',
                                 position:'relative'}}>
-                        <a className="navbar-brand" href="#">
+                        <a className="navbar-brand" href={'/homePage'}>
                             <img className="rounded img-fluid pulse animated"
                                  id="image"
                                  src={logo} alt="Logo"/>
