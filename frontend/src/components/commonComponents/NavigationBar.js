@@ -65,7 +65,7 @@ export default class NavigationBar extends Component {
                                         <li>
                                             <a
                                                 className="dropdown-item"
-                                                href="#">
+                                                href={'/Search'}>
                                                     Discover Land
                                             </a>
                                         </li>
