@@ -21,7 +21,7 @@ export default class AboutUs extends Component{
                         <div className="container">
                             <div className="intro" style={{top:'10'}}>
                                 <h2 className="text-center">ABOUT US</h2>
-                                <p className="text-center">Bla bla bla</p>
+                                <p className="text-center">ABOUT US</p>
                             </div>
                             <div className="row people">
                                 <div className="col-md-6 col-lg-4 item">
@@ -61,7 +61,9 @@ export default class AboutUs extends Component{
                                         <img className="rounded-circle"
                                              id="image"
                                              src={Charith} alt={""}/>
-                                        <h3 className="name"><b>Charith Wellala</b></h3>
+                                             <h3 className="name"style={{color:'white'}}>
+                                            <b>Charith Wellala</b>
+                                        </h3>
                                         <p className="title">Frontend Developer</p>
                                         <p className="description" style={{color:"#c7cdd6"}}>Aenean tortor est, vulputate quis leo in, vehicula
                                             rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus
@@ -86,7 +88,7 @@ export default class AboutUs extends Component{
                                         <img className="rounded-circle"
                                              id="image"
                                         src={Avishka} alt={""}/>
-                                        <h3 className="name">
+                                        <h3 className="name"style={{color:'white'}}>
                                             <b>Avishka Lakshan</b>
                                         </h3>
                                         <p className="title">
@@ -99,7 +101,7 @@ export default class AboutUs extends Component{
                                             massa.
                                         </p>
                                         <div className="social">
-                                            <a href="#">
+                                            <a href="https://www.facebook.com/avishka.lakshan/">
                                                 <i className="fa fa-facebook-official"/>
                                             </a>
                                             <a href="#">
