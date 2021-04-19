@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import NavigationBar from "../commonComponents/NavigationBar";
-import logo from "../../assets/loginPageAssets/img/logo.png"
+import logo1 from "../../assets/loginPageAssets/img/logo1.png";
 import "../../assets/loginPageAssets/bootstrap/css/bootstrap.min.css";
 import "../../assets/loginPageAssets/css/OcOrato---Login-form.css";
 import "../../assets/loginPageAssets/css/OcOrato---Login-form-1.css";
@@ -36,7 +36,7 @@ export default class LoginPage extends Component{
                             <img className="rounded img-fluid pulse animated"
                                  id="image"
                                  style={{width: 'auto', height: 'auto'}}
-                                 src={logo} alt="Logo"/>
+                                 src={logo1} alt="Logo"/>
                         </div>
                         <div className="form-group">
                             <input className="form-control" type="email" id="formum"

@@ -4,7 +4,7 @@ import "./../../assets/navigationBarAssets/fonts/simple-line-icons.min.css";
 import "./../../assets/navigationBarAssets/css/Advanced-NavBar---Multi-dropdown.css";
 import "./../../assets/navigationBarAssets/css/styles.css";
 import { Link } from 'react-router-dom';
-import logo from "../../assets/loginPageAssets/img/logo.png";
+import logo1 from "../../assets/loginPageAssets/img/logo1.png";
 import HomePage from "../homePage/HomePage";
 
 export default class NavigationBar extends Component {
@@ -24,7 +24,7 @@ export default class NavigationBar extends Component {
                         <a className="navbar-brand" href={'/homePage'}>
                             <img className="rounded img-fluid pulse animated"
                                  id="image"
-                                 src={logo} alt="Logo"/>
+                                 src={logo1} alt="Logo"/>
                         </a>
                         </div>
                         <button
