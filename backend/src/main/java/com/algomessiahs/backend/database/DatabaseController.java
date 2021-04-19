@@ -35,5 +35,14 @@ public class DatabaseController {
         return true;
     }
 
+    @GetMapping("/test/{price}/{intrest}/{installment}")
+    public float testAPi(@PathVariable String price, @PathVariable String intrest, @PathVariable String installment){
+        float Price = Integer.parseInt(price);
+        float Intrest = Integer.parseInt(intrest);
+        float Instalments = Integer.parseInt(installment);
+        float output = ((Price/100)*(100+Intrest)/Instalments);
+        return output;
+    }
+
 
 }
