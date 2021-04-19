@@ -1,6 +1,7 @@
 import React, { Component , useEffect, useState} from "react";
 import NavigationBar from "../commonComponents/NavigationBar";
 import logo from "../../assets/loginPageAssets/img/logo.png";
+import logo1 from "../../assets/loginPageAssets/img/logo1.png";
 import "../../assets/loginPageAssets/bootstrap/css/bootstrap.min.css";
 import "../../assets/loginPageAssets/css/OcOrato---Login-form.css";
 import "../../assets/loginPageAssets/css/OcOrato---Login-form-1.css";
@@ -94,7 +95,7 @@ callApi() {
                 className="rounded img-fluid pulse animated"
                 id="image"
                 style={{ width: "auto", height: "auto" }}
-                src={logo}
+                src={logo1}
                 alt="Logo"
               />
               
