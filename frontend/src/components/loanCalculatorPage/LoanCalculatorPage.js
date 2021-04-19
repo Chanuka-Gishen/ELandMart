@@ -49,10 +49,10 @@ export default class LoanCalculatorPage extends Component{
                 <input id="price" class="form-control" type="number"  price="text-Input"></input></div>
 
                 <div class="form-group"><label for="number"><b>Number of Installments</b></label>
-                <input id="installments" class="form-control" type="number" installments="text-Input"onchange='computeLoan'></input></div>
+                <input id="installments" class="form-control" type="number" installments="text-Input"></input></div>
 
                 <div class="form-group"><label for="number"><b>Interest Rate (%)</b></label>
-                <input id="rate" class="form-control" type="number" min="0" max="100" onchange="computeLoan"   rate="text-Input"></input></div>
+                <input id="rate" class="form-control" type="number" min="0" max="100"    rate="text-Input"></input></div>
             
                 <div className="form-group"><button className="btn btn-primary" onClick={computeLoan}>Calculate</button></div>
                 <div class="form-group2"><h2 id="payment"></h2></div>
