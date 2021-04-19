@@ -6,6 +6,7 @@ import HeroSection from "../homePage/HeroSection/HeroSection";
 import Cards from "../homePage/Cards/Cards";
 import { Router, Switch, Route } from "react-router-dom";
 import { render } from "@testing-library/react";
+import axios from "axios";
 
 export default class Validate extends Component {
   constructor(props) {
@@ -72,7 +73,7 @@ export default class Validate extends Component {
   dataEnter(event) {}
 
   callAPI() {
-    fetch("/api")
+    fetch("http://127.0.0.1:8000/weburl/")
       .then((res) => res.text())
       .then((res) => this.setState({ apiResponse: res }));
   }
@@ -153,7 +154,7 @@ export default class Validate extends Component {
                 Validate
               </button>
 
-              <p className="App-intro">{this.state.location}</p>
+              <p className="App-intro">{this.state.apiResponse}</p>
             </div>
           </form>
         </div>

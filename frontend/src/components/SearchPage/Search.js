@@ -1,7 +1,34 @@
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
 import NavigationBar from "../commonComponents/NavigationBar";
-export default class FeaturesPage extends Component {
-  render() {
+import axios from "axios";
+
+const FeaturesPage = () =>  {
+    const [lankaPropertyUrl, getLankaUrl] = useState([])
+    const [ceylonPropertyUrl, getCeylonUrl] = useState([])
+    const [ikmanlkUrl, getIkmanlkUrl] = useState([])
+
+    const fetchData = () => {
+      const getFisrtUrl = axios.get("http://127.0.0.1:8000/weburl/lankaProperty/")
+      const getSecondUrl = axios.get("http://127.0.0.1:8000/weburl/ceylonLanka/")
+      const getThirdUrl = axios.get("http://127.0.0.1:8000/weburl/ikmanlk/")
+      axios.all([getFisrtUrl, getSecondUrl, getThirdUrl]).then(
+        axios.spread((...allData) => {
+          const stringLankaPropertyUrl = allData[0].config.url
+          const stringCeylonPropertyUrl = allData[1].config.url
+          const stringIkmanaLkUrl = allData[2].config.url
+
+          getLankaUrl(stringLankaPropertyUrl)
+          getCeylonUrl(stringCeylonPropertyUrl)
+          getIkmanlkUrl(stringIkmanaLkUrl)
+          
+        }) 
+      )
+    }
+
+    useEffect(() => {
+      fetchData()
+    }, [])
+
     return (
       <div>
         <NavigationBar />
@@ -27,21 +54,22 @@ export default class FeaturesPage extends Component {
           <div class="tab-content">
             <div class="tab-pane active" id="home">
               <iframe
-                src="http://www.ikman.lk/"
+                id="lankaPro"
+                src={getLankaUrl}
                 height="500px"
                 width="100%"
               ></iframe>
             </div>
             <div class="tab-pane active" id="profile">
               <iframe
-                src="http://www.google.lk/"
+                src={getCeylonUrl}
                 height="500px"
                 width="100%"
               ></iframe>
             </div>
             <div class="tab-pane" id="messages">
               <iframe
-                src="http://news.sky.com/"
+                src={getIkmanlkUrl}
                 height="500px"
                 width="100%"
               ></iframe>
@@ -50,5 +78,5 @@ export default class FeaturesPage extends Component {
         </div>
       </div>
     );
-  }
 }
+export default FeaturesPage;
