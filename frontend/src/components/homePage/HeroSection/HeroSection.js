@@ -14,6 +14,7 @@ function HeroSection() {
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
+          route='/signInPage'
         >
           GET STARTED
         </Button>
@@ -22,6 +23,7 @@ function HeroSection() {
           buttonStyle='btn--primary'
           buttonSize='btn--large'
           onClick={console.log('hey')}
+          route='/Search'
         >
          DISCOVER LAND <i className='far fa-play-circle' />
 
