@@ -14,59 +14,79 @@ export default class SignInPage extends Component {
   constructor(props) {
     super(props);
     this.state = { 
-    save: "",
-    phoneNumber:"",
-    startDate:"",
-    age:"",
-    email:"",
-    password:"",
-    name:"",
-};
-this.handleChange = this.handleChange.bind(this);
-this.setage=this.setage.bind(this);
-this.setName=this.setName.bind(this);
-this.setPassword=this.setPassword.bind(this);
-this.setEmail=this.setEmail.bind(this);
-}
-handleChange(event) {   
-    this.setState({phoneNumber: event}); 
- };
-setStartDate(event) {   
-    this.setState({startDate: event}); 
- };
- setName(event) {
-    this.setState({name: event.target.value}); 
- }
- setPassword(event) {
-    this.setState({password: event.target.value}); 
- }
- setEmail(event) {
-  this.setState({email: event.target.value}); 
-}
-
-//use set age method to caculate age
- setage() {
-  
-  if(this.state.phoneNumber==="" || this.state.startDate==="" || this.state.email==="" || this.state.password==="" || this.state.name==="" ){
-    alert("Please fill all the fields")
-  }else{
-    let thisYear = parseInt(new Date().getFullYear());
-    let ageInt=parseInt(this.state.startDate);
-    let ageCal=thisYear-ageInt;
-    this.setState({age:ageCal})
-    console.log(ageCal);
-
-    //api call hear after validating all the data
+      save: "",
+      phoneNumber:"",
+      startDate:"",
+      age:"",
+      email:"",
+      password:"",
+      name:"",
+    };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.setage=this.setage.bind(this);
+    this.setName=this.setName.bind(this);
+    this.setPassword=this.setPassword.bind(this);
+    this.setEmail=this.setEmail.bind(this);
   }
-  
-   
- };
-
-callApi() {
-    const log = fetch("/save")
-      .then((res) => res.text())
-      .then((res) => this.setState({ save: res }));
+  handleChange(event) {   
+      this.setState({phoneNumber: event}); 
   };
+  setStartDate(event) {   
+      this.setState({startDate: event}); 
+  };
+  setName(event) {
+      this.setState({name: event.target.value}); 
+  }
+  setPassword(event) {
+      this.setState({password: event.target.value}); 
+  }
+  setEmail(event) {
+    this.setState({email: event.target.value}); 
+  }
+
+  //use set age method to caculate age
+  setage() {
+  
+    if(this.state.phoneNumber==="" || this.state.startDate==="" || this.state.email==="" || this.state.password==="" || this.state.name==="" ){
+      alert("Please fill all the fields")
+    }else{
+      let thisYear = parseInt(new Date().getFullYear());
+      let ageInt=parseInt(this.state.startDate);
+      let ageCal=thisYear-ageInt;
+      this.setState({age:ageCal})
+      console.log(ageCal);
+
+      //api call hear after validating all the data
+      fetch("http://127.0.0.1:8000/user/addnewuser/",{
+        method:'POST',
+        headers:{
+            'Accept':'application/json',
+            'Content-Type':'application/json'
+        },
+        body:JSON.stringify({
+            user_name:this.name,
+            user_email:this.email,
+            user_password:this.password,
+            user_mobileNo:this.phoneNumber
+
+        })
+      })
+      .then(res=>res.json())
+      .then((result)=>{
+          alert(result);
+      },
+      (error)=>{
+          alert('Failed');
+      });
+      console.log(this.name, this.email, this.password, this.phoneNumber)
+    }
+  };
+
+  handleSubmit(){
+    event.preventDefault();
+    
+}
 
 
   render() {
@@ -76,6 +96,7 @@ callApi() {
         <div>
           <form
             id="form"
+            onSubmit={this.handleSubmit}
             style={{
               fontFamily: "Quicksand, sans-serif",
               backgroundColor: "rgba(44,40,52,0.73)",
