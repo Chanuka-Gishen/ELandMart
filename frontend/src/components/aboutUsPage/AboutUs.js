@@ -31,26 +31,26 @@ export default class AboutUs extends Component{
                                              id="image"
                                              src={Chanuka} alt={""}/>
 
-                                        <h3 className="name"style={{color:'white'}}>
+                                        <h3 className="name"style={{color:'#000000'}}>
                                             <b>Chanuka Mendis</b>
                                         </h3>
-                                        <p className="title"style={{color:"#c7cdd6"}}>
+                                        <p className="title"style={{color:"#000000"}}>
                                             <i>Backend Developer</i>
                                         </p>
-                                        <p className="description"style={{color:"#c7cdd6"}}>
+                                        <p className="description"style={{color:"#000000"}}>
                                             Aenean tortor est, vulputate quis leo in, vehicula
                                             rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus
                                             est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper
                                             massa.
                                         </p>
                                         <div className="social">
-                                            <a href="#">
+                                            <a href="#000000">
                                                 <i className="fa fa-facebook-official"/>
                                             </a>
                                             <a href="#">
                                                 <i className="fa fa-twitter"/>
                                             </a>
-                                            <a href="#">
+                                            <a href="https://instagram.com/_c.h.a.n.u_g.i.s.h.e.n_?igshid=cb55u5edg7mt">
                                                 <i className="fa fa-instagram"/>
                                             </a>
                                         </div>
@@ -61,23 +61,23 @@ export default class AboutUs extends Component{
                                         <img className="rounded-circle"
                                              id="image"
                                              src={Charith} alt={""}/>
-                                             <h3 className="name"style={{color:'white'}}>
+                                             <h3 className="name"style={{color:'#000000'}}>
                                             <b>Charith Wellala</b>
                                         </h3>
                                         <p className="title">Frontend Developer</p>
-                                        <p className="description" style={{color:"#c7cdd6"}}>Aenean tortor est, vulputate quis leo in, vehicula
+                                        <p className="description" style={{color:"#000000"}}>Aenean tortor est, vulputate quis leo in, vehicula
                                             rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus
                                             est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper
                                             massa.
                                         </p>
                                         <div className="social">
-                                            <a href="#">
+                                            <a href="https://www.facebook.com/charith.lakmal.3">
                                                 <i className="fa fa-facebook-official"/>
                                             </a>
                                             <a href="#">
                                                 <i className="fa fa-twitter"/>
                                             </a>
-                                            <a href="#">
+                                            <a href="https://instagram.com/charith__lakmal?igshid=y964ya8cumab">
                                                 <i className="fa fa-instagram"/>
                                             </a>
                                         </div>
@@ -88,13 +88,13 @@ export default class AboutUs extends Component{
                                         <img className="rounded-circle"
                                              id="image"
                                         src={Avishka} alt={""}/>
-                                        <h3 className="name"style={{color:'white'}}>
+                                        <h3 className="name"style={{color:'#000000'}}>
                                             <b>Avishka Lakshan</b>
                                         </h3>
                                         <p className="title">
                                             Frontend Developer
                                         </p>
-                                        <p className="description"style={{color:"#c7cdd6"}}>
+                                        <p className="description"style={{color:"#000000"}}>
                                             Aenean tortor est, vulputate quis leo in, vehicula
                                             rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus
                                             est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper
@@ -154,7 +154,7 @@ export default class AboutUs extends Component{
                                             <a href="#">
                                                 <i className="fa fa-twitter"/>
                                             </a>
-                                            <a href="#">
+                                            <a href="https://instagram.com/kasun.sene?igshid=1mcqbyy8hlwo9">
                                                 <i className="fa fa-instagram"/>
                                             </a>
                                         </div>
@@ -184,7 +184,7 @@ export default class AboutUs extends Component{
                                             <a href="#">
                                                 <i className="fa fa-twitter"/>
                                             </a>
-                                            <a href="#">
+                                            <a href="https://instagram.com/kasun.sene?igshid=1mcqbyy8hlwo9">
                                                 <i className="fa fa-instagram"/>
                                             </a>
                                         </div>
