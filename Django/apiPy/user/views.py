@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from django.views.decorators import csrf
 from rest_framework.parsers import JSONParser
 from django.http.response import JsonResponse
 
@@ -10,7 +9,6 @@ from user.models import UserDetails
 def index(request):
     return HttpResponse("Curd Opertations")
 
-@csrf_exempt
 def addNewUser(request):
     if request.method == 'POST':
         user_data = JSONParser().parser(request)
@@ -23,8 +21,8 @@ def addNewUser(request):
     
     if request.method == 'GET':
         users = UserDetails.objects.all()
-        user_serializer = UserSerializer(users, many = True)
-        return JsonResponse(user_serializer.data, safe= False)
+        user_serializer = UserSerializer(users)
+        return JsonResponse(user_serializer, safe= False)
 
 
     
