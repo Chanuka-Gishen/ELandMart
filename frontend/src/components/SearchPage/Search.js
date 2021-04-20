@@ -13,9 +13,9 @@ const FeaturesPage = () =>  {
       const getThirdUrl = axios.get("http://127.0.0.1:8000/weburl/ikmanlk/")
       axios.all([getFisrtUrl, getSecondUrl, getThirdUrl]).then(
         axios.spread((...allData) => {
-          const stringLankaPropertyUrl = allData[0].config.url
-          const stringCeylonPropertyUrl = allData[1].config.url
-          const stringIkmanaLkUrl = allData[2].config.url
+          const stringLankaPropertyUrl = allData[0].config.urls
+          const stringCeylonPropertyUrl = allData[1].config.urls
+          const stringIkmanaLkUrl = allData[2].config.urls
 
           getLankaUrl(stringLankaPropertyUrl)
           getCeylonUrl(stringCeylonPropertyUrl)
@@ -55,7 +55,7 @@ const FeaturesPage = () =>  {
             <div class="tab-pane active" id="home">
               <iframe
                 id="lankaPro"
-                src={getLankaUrl}
+                src= {getLankaUrl}
                 height="500px"
                 width="100%"
               ></iframe>

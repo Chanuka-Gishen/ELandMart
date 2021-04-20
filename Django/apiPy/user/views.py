@@ -9,19 +9,19 @@ from user.serializers import UserSerializer
 # Create your views here.
 @csrf_exempt
 def addUserApi(request,id=0):
-    if request.method=='GET':
-        users = UserDetails.objects.all()
-        user_serializer = UserSerializer(users, many=True)
-        return JsonResponse(user_serializer.data, safe=False)
-
-    elif request.method=='POST':
-        user_data=JSONParser().parse(request)
-        user_serializer = UserSerializer(data=user_data)
-        if user_serializer.is_valid():
-            user_serializer.save()
-            return JsonResponse("Added Successfully!!" , safe=False)
-        return JsonResponse("Failed to Add.",safe=False)
+    user_data=JSONParser().parse(request)
+    user_serializer = UserSerializer(data=user_data)
+    if user_serializer.is_valid():
+        user_serializer.save()
+        return JsonResponse("Added Successfully!!" , safe=False)
+    return JsonResponse("Failed to Add.",safe=False)
+        
     
+def getusers(request):
+    users = UserDetails.objects.all()
+    user_serializer = UserSerializer(users, many=True)
+    return JsonResponse(user_serializer.data, safe=False)
+
 def index(request):
     return HttpResponse("Curd Opertations")
 
