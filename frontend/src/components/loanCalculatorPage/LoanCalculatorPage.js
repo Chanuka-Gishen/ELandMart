@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/heading-has-content */
+
 import React, {Component} from "react";
 import NavigationBar from "../commonComponents/NavigationBar";
 import "../../assets/loanCalculatorAssets/bootstrap/css/bootstrap.min.css";
@@ -26,8 +26,9 @@ export default class LoanCalculatorPage extends Component{
 
     render() {
        
-        function  computeLoan() 
+        function  computeLoan(e) 
         {
+            e.preventDefault();
             var price = document.getElementById('price').value;
             var rate =document.getElementById('rate').value; 
             var installments=document.getElementById('installments').value;
@@ -54,7 +55,7 @@ export default class LoanCalculatorPage extends Component{
                 <div class="form-group"><label for="number"><b>Interest Rate (%)</b></label>
                 <input id="rate" class="form-control" type="number" min="0" max="100"    rate="text-Input"></input></div>
             
-                <div className="form-group"><button className="btn btn-primary" onClick={computeLoan}>Calculate</button></div>
+                <div class="form-group"><button class="btn btn-primary" onClick={computeLoan}>Calculate</button></div>
                 <div class="form-group2"><h2 id="payment"></h2></div>
 
             </form>
