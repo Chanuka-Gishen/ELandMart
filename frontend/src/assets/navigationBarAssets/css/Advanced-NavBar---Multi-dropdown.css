@@ -6,7 +6,7 @@
 }
 
 .header2.bg-success-gradiant {
-  background: rgb(77, 77, 77);
+  background: rgb(65, 64, 64);
   position: fixed;
   width: 100%;
   top: 0;
@@ -32,12 +32,12 @@
 
 .header2 .h2-nav .navbar-nav .nav-item .nav-link {
   padding: 12px 0px;
-  color: rgb(235, 137, 8);
+  color: rgb(253, 125, 6);
   font-weight: 450;
 }
 
 .header2 .h2-nav .navbar-nav .nav-item .nav-link:hover {
-  color: orange;
+  color: rgb(91, 250, 6);
 }
 
 .header2 .h2-nav .navbar-nav .nav-item {
@@ -72,8 +72,8 @@
 .header2 .btn-dark {
   color: rgb(253, 187, 45);
   /*font-weight: bold;*/
-  background-color: lightskyblue;
-  border-color: blue;
+  background-color: rgb(27, 27, 25);
+  border-color: rgb(231, 70, 70);
 }
 
 .header2 .btn-dark:hover {
