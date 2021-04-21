@@ -58,7 +58,7 @@ export default class Validate extends Component {
     if (
       this.state.size === "" ||
       this.state.type === "" ||
-      this.state.distanceToRoad === ""
+      this.state.distanceToRoad === "" 
       
     ) {
       alert("Fill all fields!");
@@ -68,6 +68,7 @@ export default class Validate extends Component {
           size={this.state.size}
           type={this.state.type}
           distance={this.state.distanceToRoad}
+          
           lane = {this.state.Lanesnames}
         />
       );
@@ -156,10 +157,12 @@ export default class Validate extends Component {
               /> */}
               <label for="lane">
                 {" "}
-                <b>Lane</b>
+                <b>  Lane &nbsp;&nbsp;&nbsp;&nbsp; </b>
+                
               </label>
               
                 <select>
+                
                   <option selected disabled ="true">---Select Lane---</option>
                   {
                     lanes.Lanesnames.map((result)=> (<option >{result.lane}</option>))
@@ -175,6 +178,7 @@ export default class Validate extends Component {
 
               <p className="App-intro">{this.state.apiResponse}</p>
             </div>
+            <p>Limited to Galle District....</p>
           </form>
         </div>
       );

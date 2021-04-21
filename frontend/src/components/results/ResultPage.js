@@ -47,7 +47,7 @@ export default class ResultPage extends Component {
 <h1 class ="text" >Size of the land: {this.props.size} perches</h1>
 <h1 class ="text">Land type: {this.props.type} </h1>
 <h1 class ="text">Distance to Main Road: {this.props.distance} metres </h1>
-<h1 class ="text">Location: {this.props.location} </h1>
+<h1 class ="text">Lane: {this.props.lane} </h1>
 <h1 class ="text">Predicted Value:  {this.props.predicteds} </h1>
         </div>
       
