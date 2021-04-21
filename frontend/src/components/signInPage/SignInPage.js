@@ -178,7 +178,7 @@ export default class SignInPage extends Component {
             >
               Sign Up
             </button>
-            
+            < a href="Login">Already have a Account?</a>
           </form>
         </div>
       </div>
