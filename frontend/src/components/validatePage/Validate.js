@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../../assets/jsonFiles/jsonparserArea.py";
+import lanes from "../../assets/jsonFiles/lanes.json";
 import "../../assets/validatePageAssets/Validate.css";
 import NavigationBar from "../commonComponents/NavigationBar";
 import ResultPage from "../results/ResultPage";
@@ -17,13 +17,13 @@ export default class Validate extends Component {
       size: "",
       type: "",
       distanceToRoad: "",
-      location: "",
+      lane: "",
       status: true,
     };
     this.setSizeOfLand = this.setSizeOfLand.bind(this);
     this.setLandType = this.setLandType.bind(this);
     this.setDistance = this.setDistance.bind(this);
-    this.setLocation = this.setLocation.bind(this);
+    this.setLane = this.setLane.bind(this);
     this.Loader = this.Loader.bind(this);
     this.setStatus = this.setStatus.bind(this);
   }
@@ -37,9 +37,9 @@ export default class Validate extends Component {
   setLandType(event) {
     this.setState({ type: event.target.value });
   }
-  setLocation(event) {
-    this.setState({ location: event.target.value });
-  }
+  // setLocation(event) {
+  //   this.setState({ location: event.target.value });
+  // }
   setStatus() {
     this.setState({ status: true });
   }
@@ -50,7 +50,7 @@ export default class Validate extends Component {
     }
   }
    setLane(event) {
-      this.setState({ status : true});
+      this.setState({lane: event.target.value});
     }
   
 
@@ -58,8 +58,8 @@ export default class Validate extends Component {
     if (
       this.state.size === "" ||
       this.state.type === "" ||
-      this.state.distanceToRoad === "" ||
-      this.state.location === ""
+      this.state.distanceToRoad === ""
+      
     ) {
       alert("Fill all fields!");
     } else {
@@ -68,8 +68,7 @@ export default class Validate extends Component {
           size={this.state.size}
           type={this.state.type}
           distance={this.state.distanceToRoad}
-          location={this.state.location}
-          lane = {this.state.lane}
+          lane = {this.state.Lanesnames}
         />
       );
       this.setState({ status: false });
@@ -144,7 +143,7 @@ export default class Validate extends Component {
                 required
                 onChange={this.setDistance}
               />
-              <label for="landLocation">
+              {/* <label for="landLocation">
                 {" "}
                 <b>Location</b>
               </label>
@@ -154,7 +153,7 @@ export default class Validate extends Component {
                 id="location"
                 required
                 onChange={this.setLocation}
-              />
+              /> */}
               <label for="lane">
                 {" "}
                 <b>Lane</b>
@@ -163,8 +162,7 @@ export default class Validate extends Component {
                 <select>
                   <option selected disabled ="true">---Select Lane---</option>
                   {
-                    
-                  <option></option>
+                    lanes.Lanesnames.map((result)=> (<option >{result.lane}</option>))
                   }
                 onChange={this.setLane}
                 </select> 
