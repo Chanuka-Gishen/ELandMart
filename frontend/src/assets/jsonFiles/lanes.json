@@ -1,0 +1,569 @@
+[
+    {
+        "lane": "1st Cross Street"
+    },
+    {
+        "lane": "Paththinige Watta Rd"
+    },
+    {
+        "lane": ""
+    },
+    {
+        "lane": "Polwatta Government Hospital Rd"
+    },
+    {
+        "lane": "Keththarama Mawatha"
+    },
+    {
+        "lane": "Dewasurendra Pedesa"
+    },
+    {
+        "lane": "Agaliya Mulakada Road"
+    },
+    {
+        "lane": "Pelassa Road"
+    },
+    {
+        "lane": "Thiththagalla Kaarana Road"
+    },
+    {
+        "lane": "Keebiya Road"
+    },
+    {
+        "lane": "Galusiri Uyana "
+    },
+    {
+        "lane": "Alapalawa Road"
+    },
+    {
+        "lane": "Lanumodara Rd"
+    },
+    {
+        "lane": "Campwatta Road"
+    },
+    {
+        "lane": "Watareka Rd"
+    },
+    {
+        "lane": "Mahawatta Road"
+    },
+    {
+        "lane": "Maitipe 1st Lane"
+    },
+    {
+        "lane": "Palliyapitiya Rd"
+    },
+    {
+        "lane": "Batuwanhena - Igalkanda Road"
+    },
+    {
+        "lane": "Galle - Baddegama Road"
+    },
+    {
+        "lane": "Kurusagoda Road"
+    },
+    {
+        "lane": "Deddugoda Lane"
+    },
+    {
+        "lane": "Sudarmarama New Lane"
+    },
+    {
+        "lane": "Pitiharawa Road"
+    },
+    {
+        "lane": "Mahawella Road"
+    },
+    {
+        "lane": "Abdul Wahab Mawatha"
+    },
+    {
+        "lane": "Vidyaloka 2nd Lane"
+    },
+    {
+        "lane": "2nd Cross Street"
+    },
+    {
+        "lane": "Gothatuwa  Road"
+    },
+    {
+        "lane": "Siridhamma Mawatha"
+    },
+    {
+        "lane": "Yakkatuwa-Kahaduwa road"
+    },
+    {
+        "lane": "Southern Expy Access Road"
+    },
+    {
+        "lane": "Nambara Atta Diwithura Road"
+    },
+    {
+        "lane": "Dharamaraja Mawatha"
+    },
+    {
+        "lane": "Mahinda Mawatha"
+    },
+    {
+        "lane": "Nadun Uyana Estate Road"
+    },
+    {
+        "lane": "Kapuge Mawatha"
+    },
+    {
+        "lane": "Galketiya Rd"
+    },
+    {
+        "lane": "Madapatala 2nd Lane"
+    },
+    {
+        "lane": "Sudumatiya Road"
+    },
+    {
+        "lane": "Eliot Road"
+    },
+    {
+        "lane": "Bodagodawatta"
+    },
+    {
+        "lane": "Dissanayake Mawatha"
+    },
+    {
+        "lane": "Katudampe Rd"
+    },
+    {
+        "lane": "Berathuduwa Rd"
+    },
+    {
+        "lane": "Nagarukkarama Road"
+    },
+    {
+        "lane": "Kachchiwaththa Road"
+    },
+    {
+        "lane": "A.H.M Anwer Road"
+    },
+    {
+        "lane": "Gamunu Mawatha"
+    },
+    {
+        "lane": "Athulanandanarama Temple Rd"
+    },
+    {
+        "lane": "Regis Illeperuma Mawatha"
+    },
+    {
+        "lane": "Prime Rose Park"
+    },
+    {
+        "lane": "Kularatne Road"
+    },
+    {
+        "lane": "D.Samson Rajapaksha Mawatha"
+    },
+    {
+        "lane": "Aluthwala Road"
+    },
+    {
+        "lane": "Pinkanda Road"
+    },
+    {
+        "lane": "Palliyapitiya Road"
+    },
+    {
+        "lane": "Madapatala 2nd Ln"
+    },
+    {
+        "lane": "Batuwanthudawa Road"
+    },
+    {
+        "lane": "Meepe Hospital Rd"
+    },
+    {
+        "lane": "Dadli Senanayaka Road"
+    },
+    {
+        "lane": "Pokunawatta Rd"
+    },
+    {
+        "lane": "Galle-Baddegama Road"
+    },
+    {
+        "lane": "Massala Rd"
+    },
+    {
+        "lane": "Senanayaka Mawatha"
+    },
+    {
+        "lane": "Rejjipura Rd"
+    },
+    {
+        "lane": "Janasaviya Road"
+    },
+    {
+        "lane": "Samagi Mawatha"
+    },
+    {
+        "lane": "Eluwila-Elathota Rd"
+    },
+    {
+        "lane": "Isuru Mawatha"
+    },
+    {
+        "lane": "Babarawana Road"
+    },
+    {
+        "lane": "Wanduramba Road"
+    },
+    {
+        "lane": "Harannagala Road"
+    },
+    {
+        "lane": "Hapugoda Mawatha"
+    },
+    {
+        "lane": "Galketiya Cross Road"
+    },
+    {
+        "lane": "Galle - Elipitiya Road"
+    },
+    {
+        "lane": "Badungoda Rd"
+    },
+    {
+        "lane": "Heenatigala Rd"
+    },
+    {
+        "lane": "Sri Hemanandha Mawatha"
+    },
+    {
+        "lane": "Kumbalwella 1st"
+    },
+    {
+        "lane": "Sri Gunarathana Rd"
+    },
+    {
+        "lane": "Badie Road"
+    },
+    {
+        "lane": "Pitawalgoda Road"
+    },
+    {
+        "lane": "Galkatiye Road"
+    },
+    {
+        "lane": "Thakkiya Road"
+    },
+    {
+        "lane": "Sri Sumangala Road"
+    },
+    {
+        "lane": "Dampagoda Mawatha"
+    },
+    {
+        "lane": "Circular Road"
+    },
+    {
+        "lane": "Mihiripenna Meegahawaththa"
+    },
+    {
+        "lane": "Sugathapala Mw"
+    },
+    {
+        "lane": "Dunwatta Junction"
+    },
+    {
+        "lane": "Madawalamulla Road"
+    },
+    {
+        "lane": "Padinnoruwa Rd"
+    },
+    {
+        "lane": "Heenpendala Road"
+    },
+    {
+        "lane": "Wakwalla Road"
+    },
+    {
+        "lane": "Wimalasurendra Mawatha"
+    },
+    {
+        "lane": "Kong Tree Rd"
+    },
+    {
+        "lane": "3rd Lane"
+    },
+    {
+        "lane": "Kurunda Road"
+    },
+    {
+        "lane": "Ananda Road"
+    },
+    {
+        "lane": "Egodahawaththa Rd"
+    },
+    {
+        "lane": "Lower Dickson Road"
+    },
+    {
+        "lane": "Nagahawatta pedesa"
+    },
+    {
+        "lane": "Sugatharama Road"
+    },
+    {
+        "lane": "Yahaladuwa Road"
+    },
+    {
+        "lane": "Waulagoda Middle Road"
+    },
+    {
+        "lane": "Hodihaliyahena Rd"
+    },
+    {
+        "lane": "Upper Dickson Road"
+    },
+    {
+        "lane": "Abrahm Dias Mawatha"
+    },
+    {
+        "lane": "Tea Garden Rd"
+    },
+    {
+        "lane": "Ella Meda Road"
+    },
+    {
+        "lane": "Crips Road"
+    },
+    {
+        "lane": "Morris Road"
+    },
+    {
+        "lane": "Sri Pannalankara Mawatha"
+    },
+    {
+        "lane": "Closenberg Road"
+    },
+    {
+        "lane": "Bietris Kannangara Mawatha"
+    },
+    {
+        "lane": "Godakanda Narawala Rd"
+    },
+    {
+        "lane": "Southern Hight Rd"
+    },
+    {
+        "lane": "Ground Road"
+    },
+    {
+        "lane": "Magawatta Road"
+    },
+    {
+        "lane": "Kalahe - Pahalawaththa Rd"
+    },
+    {
+        "lane": "Pokunawatta Road"
+    },
+    {
+        "lane": "Sumnatissa Mawatha"
+    },
+    {
+        "lane": "Sarath Goonawaradana Mawatha"
+    },
+    {
+        "lane": "St Ritas Road"
+    },
+    {
+        "lane": "Library Road"
+    },
+    {
+        "lane": "Grace City"
+    },
+    {
+        "lane": "Gonapura Rd"
+    },
+    {
+        "lane": "Ananda Vidyala Mawatha"
+    },
+    {
+        "lane": "Elpitiya-Pituwala-Kahaduwa Road"
+    },
+    {
+        "lane": "Old Hikkaduwa Road"
+    },
+    {
+        "lane": "Nayapamula - Agaliya Rd"
+    },
+    {
+        "lane": "Manampita Road"
+    },
+    {
+        "lane": "4th Lane"
+    },
+    {
+        "lane": "Haggodaduwa Rd"
+    },
+    {
+        "lane": "Reagle Road"
+    },
+    {
+        "lane": "Edirisinghe Road"
+    },
+    {
+        "lane": "Hirimbura Road"
+    },
+    {
+        "lane": "Vihara Mawatha"
+    },
+    {
+        "lane": "Recourse Road"
+    },
+    {
+        "lane": "Wekunagoda Road"
+    },
+    {
+        "lane": "Majuwana Road"
+    },
+    {
+        "lane": "Viwakarama Road"
+    },
+    {
+        "lane": "Kadurupa Road"
+    },
+    {
+        "lane": "Sumanathissa Mawatha"
+    },
+    {
+        "lane": "Sugatha Nahimi Mawatha"
+    },
+    {
+        "lane": "Welithuduwa Road"
+    },
+    {
+        "lane": "Sadhujana Mawatha"
+    },
+    {
+        "lane": "Uranwila Road"
+    },
+    {
+        "lane": "Gurusinghegoda Road"
+    },
+    {
+        "lane": "Steel Road"
+    },
+    {
+        "lane": "Egodawatta Ln"
+    },
+    {
+        "lane": "Poyagala Kandha Road"
+    },
+    {
+        "lane": "Elapolawatta"
+    },
+    {
+        "lane": "Galle-Udugama Road"
+    },
+    {
+        "lane": "K.G. Francis Appuhami Mawatha"
+    },
+    {
+        "lane": "Temple Road"
+    },
+    {
+        "lane": "Peter Kiringoda Mawatha"
+    },
+    {
+        "lane": "New City  Road"
+    },
+    {
+        "lane": "Dehithagama Ln"
+    },
+    {
+        "lane": "DolahenaPark Road"
+    },
+    {
+        "lane": "Galketiya Cross Rd"
+    },
+    {
+        "lane": "Dalkada Road"
+    },
+    {
+        "lane": "Alapalaawa Rd"
+    },
+    {
+        "lane": "Chethiyagiri Vihara Lane"
+    },
+    {
+        "lane": "Kanampitiya Road"
+    },
+    {
+        "lane": "Ape Gama Road"
+    },
+    {
+        "lane": "Villa Kubura Rd"
+    },
+    {
+        "lane": "Walamulla Road"
+    },
+    {
+        "lane": "Sumedha Mawatha"
+    },
+    {
+        "lane": "Illukketiya Rd"
+    },
+    {
+        "lane": "Wijayananda Mawatha"
+    },
+    {
+        "lane": "Wiskam Road"
+    },
+    {
+        "lane": "Dola Ihala Road"
+    },
+    {
+        "lane": "Pinkanda - Ambagaha Handiya Rd"
+    },
+    {
+        "lane": "Nagahawatta Pedesa"
+    },
+    {
+        "lane": "Wekungoda Rd"
+    },
+    {
+        "lane": "Pinthaliya - Thelikada Road"
+    },
+    {
+        "lane": "V.C Road"
+    },
+    {
+        "lane": "Heenpendala Rd"
+    },
+    {
+        "lane": "Wewalwala Road"
+    },
+    {
+        "lane": "Thalagahahena Patumaga"
+    },
+    {
+        "lane": "Maitipe 2nd Lane"
+    },
+    {
+        "lane": "Malmawatha Road"
+    },
+    {
+        "lane": "Millahill Road"
+    },
+    {
+        "lane": "Donald Janz Road"
+    },
+    {
+        "lane": "Dampagoda Road"
+    },
+    {
+        "lane": "Ukwaththa-Piyadigama Road"
+    },
+    {
+        "lane": "Sri Gunarathna Road"
+    }
+]
