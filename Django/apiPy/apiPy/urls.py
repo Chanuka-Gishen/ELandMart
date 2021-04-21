@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework.authtoken.views import obtain_auth_token
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,4 +29,6 @@ urlpatterns = [
     path('addnewuser/', include('user.urls')),
     path('getusers/', include('user.urls')),
     path('loancal/', include('user.urls')),
+    path('auth/', obtain_auth_token),
+
 ]
