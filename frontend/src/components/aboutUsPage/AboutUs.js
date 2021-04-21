@@ -62,7 +62,7 @@ export default class AboutUs extends Component{
                                              id="image"
                                              src={Charith} alt={""}/>
                                              <h3 className="name"style={{color:'#000000'}}>
-                                            <b>Lakmal Wellala</b>
+                                            <b>Charith Wellala</b>
                                         </h3>
                                         <p className="title">Frontend Developer</p>
                                         <p className="description" style={{color:"#000000"}}>Aenean tortor est, vulputate quis leo in, vehicula
