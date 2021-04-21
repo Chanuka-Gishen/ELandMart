@@ -18,13 +18,15 @@ export default class Validate extends Component {
       type: "",
       distanceToRoad: "",
       lane: "",
+      year: "",
       status: true,
-      data:[],
+      data: [],
     };
     this.setSizeOfLand = this.setSizeOfLand.bind(this);
     this.setLandType = this.setLandType.bind(this);
     this.setDistance = this.setDistance.bind(this);
     this.setLane = this.setLane.bind(this);
+    this.setYear = this.setYear.bind(this);
     this.Loader = this.Loader.bind(this);
     this.setStatus = this.setStatus.bind(this);
   }
@@ -38,9 +40,9 @@ export default class Validate extends Component {
   setLandType(event) {
     this.setState({ type: event.target.value });
   }
-  // setLocation(event) {
-  //   this.setState({ location: event.target.value });
-  // }
+  setYear(event) {
+    this.setYear({ year: event.target.value });
+  }
   setStatus() {
     this.setState({ status: true });
   }
@@ -50,51 +52,45 @@ export default class Validate extends Component {
       this.setState({ distanceToRoad: event.target.value });
     }
   }
-   setLane(event) {
-      this.setState({lane: event.target.value});
-    }
-  
+  setLane(event) {
+    this.setState({ lane: event.target.value });
+  }
 
   Loader(event) {
     if (
       this.state.size === "" ||
       this.state.type === "" ||
       this.state.distanceToRoad === ""
-      
     ) {
       alert("Fill all fields!");
     } else {
-      fetch("http://127.0.0.1:8000/valuate/export_csv/",{
-        method:'POST',
-        headers:{
-            'Accept':'application/json',
-            'Content-Type':'application/json'
+      fetch("http://127.0.0.1:8000/valuate/export_csv/", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
         },
-        body:JSON.stringify([
-            this.state.distanceToRoad,
-            this.state.size,
-            "2020"
-        ])
-      })
-      fetch("http://127.0.0.1:8000/valuate/get_valuate_inputs/",{
-        method:'POST',
-        headers:{
-            'Accept':'application/json',
-            'Content-Type':'application/json'
-        },
-        body:JSON.stringify([
+        body: JSON.stringify([
           this.state.distanceToRoad,
-          this.size,
-          "2020"
-      ])
-      })
-      
+          this.state.size,
+          "2020",
+        ]),
+      });
+      fetch("http://127.0.0.1:8000/valuate/get_valuate_inputs/", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify([this.state.distanceToRoad, this.size, "2020"]),
+      });
+
       render(
         <ResultPage
           size={this.state.size}
           type={this.state.type}
           distance={this.state.distanceToRoad}
-          lane = {this.state.Lanesnames}
+          lane={this.state.Lanesnames}
         />
       );
       this.setState({ status: false });
@@ -110,88 +106,123 @@ export default class Validate extends Component {
       renderer = (
         <div
           style={{
-            marginTop: "8.9%",
+            marginTop: "13%",
             marginRight: "-12%",
             marginLeft: "-12%",
             backgroundColor: "white",
           }}
         >
-          <form>
-            <div class="container">
-              <h1>Land Value Calculation</h1>
-              <p>Please enter your Land details to validate</p>
-              <hr />
-              <label for="landSize">
-                {" "}
-                <b>Size Of the Land</b>
-              </label>
-              <input
-                type="int"
-                placeholder="Enter the size in Perches"
-                name="size"
-                id="size"
-                value={this.state.size}
-                required
-                onChange={this.setSizeOfLand}
-              />
+          <h1>Land Value Calculation</h1><br></br>
+          <p style={{marginRight: "-12%",
+            marginLeft: "12%",}}>Please enter your Land details to validate</p>
+          <hr />
+          <table style={{ width: "80%",marginRight: "-12%",
+            marginLeft: "12%", }}>
+            <tr>
+              <td>
+                <label for="landSize">
+                  {" "}
+                  <b>Size Of the Land</b>
+                </label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Enter the size in Perches"
+                  name="size"
+                  id="size"
+                  value={this.state.size}
+                  required
+                  onChange={this.setSizeOfLand}
+                />
+              </td>
+            </tr>
 
-              <label for="landType">
+            <tr>
+              <td>
+                <label for="landType">
+                  {" "}
+                  <b>Land Type</b>
+                </label>
+              </td>
+              <td>
                 {" "}
-                <b>Land Type</b>
-              </label>
-              <input
-                type="text"
-                name="type"
-                id="landType"
-                required
-                onChange={this.setLandType}
-              />
-              <label for="distanceToRoad">
+                <input
+                  type="text"
+                  name="type"
+                  id="landType"
+                  required
+                  onChange={this.setLandType}
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="distanceToRoad">
+                  {" "}
+                  <b>Distance To The Main Road</b>
+                </label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Enter the distence in meters"
+                  name="DistanceToRoad"
+                  id="distance"
+                  value={this.state.distanceToRoad}
+                  required
+                  onChange={this.setDistance}
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="year">
+                  {" "}
+                  <b>Year</b>
+                </label>
+              </td>
+              <td>
                 {" "}
-                <b>Distance To The Main Road</b>
-              </label>
-              <input
-                type="text"
-                placeholder="Enter the distence in meters"
-                name="DistanceToRoad"
-                id="distance"
-                value={this.state.distanceToRoad}
-                required
-                onChange={this.setDistance}
-              />
-              {/* <label for="landLocation">
-                {" "}
-                <b>Location</b>
-              </label>
-              <input
-                type="text"
-                name="Location"
-                id="location"
-                required
-                onChange={this.setLocation}
-              /> */}
-              <label for="lane">
-                {" "}
-                <b>Lane</b>
-              </label>
-              
+                <input
+                  type="int"
+                  placeholder="Enter The Predict Year"
+                  name="year"
+                  id="year"
+                  required
+                  onChange={this.setYear}
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="lane">
+                  {" "}
+                  <b>Lane</b>
+                </label>
+              </td>
+              <td>
                 <select>
-                  <option selected disabled ="true">---Select Lane---</option>
-                  {
-                    lanes.Lanesnames.map((result)=> (<option >{result.lane}</option>))
-                  }
-                onChange={this.setLane}
-                </select> 
-              
+                  <option selected disabled="true">
+                    ---Select Lane---
+                  </option>
+                  {lanes.Lanesnames.map((result) => (
+                    <option>{result.lane}</option>
+                  ))}
+                  onChange={this.setLane}
+                </select>
+              </td>
+            </tr>
 
-
-              <button type="submit" class="validatebtn" onClick={this.Loader}>
-                Validate
-              </button>
-
-              <p className="App-intro">{this.state.apiResponse}</p>
-            </div>
-          </form>
+            <tr>
+              <td colspan="2">
+                <button type="submit" class="validatebtn" onClick={this.Loader}>
+                  Validate
+                </button>
+              </td>
+            </tr>
+          </table>
         </div>
       );
     }
