@@ -5,6 +5,10 @@ from django.http.response import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 import json
 import csv
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
 
 def index(response):
     return HttpResponse("Connected")
@@ -25,5 +29,24 @@ def export_csv(request):
         writer.writerow(data)
     print(data)
     return JsonResponse(data, safe= False)
+
+def give_predictions(response):
+    lr=LinearRegression()
+
+    df=pd.read_csv("Galle_train_data.csv")
+    df.head()
+
+    z=df[['Distance_Nearest_Town','Perch','Year']]
+    lr.fit(z,df['Value_of_one_perch'])
+
+    lr.intercept_
+    lr.coef_[1]
+
+    dfin=pd.read_csv("writeData.csv")
+
+    dfin.head()
+
+    output=lr.intercept_+lr.coef_[0]*dfin.at[0,'Distance_Nearest_Town']+lr.coef_[1]*dfin.at[0,'Perch']+lr.coef_[2]*dfin.at[0,'Year']
+    return HttpResponse(output)
 
 

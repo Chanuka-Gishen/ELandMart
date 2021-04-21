@@ -55,21 +55,21 @@ const FeaturesPage = () =>  {
             <div class="tab-pane active" id="home">
               <iframe
                 id="lankaPro"
-                src= {getLankaUrl}
+                src= "https://ikman.lk/"
                 height="500px"
                 width="100%"
               ></iframe>
             </div>
             <div class="tab-pane active" id="profile">
               <iframe
-                src={getCeylonUrl}
+                src="https://www.ceylonproperty.lk/"
                 height="500px"
                 width="100%"
               ></iframe>
             </div>
             <div class="tab-pane" id="messages">
               <iframe
-                src={getIkmanlkUrl}
+                src="https://www.ceylonproperty.lk/"
                 height="500px"
                 width="100%"
               ></iframe>

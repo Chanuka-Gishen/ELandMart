@@ -31,5 +31,6 @@ urlpatterns = [
     path('getusers/', include('user.urls')),
     path('loancal/', include('user.urls')),
     path('auth/', obtain_auth_token),
+    path('give_predictions/', include('user.urls')),
 
 ]
