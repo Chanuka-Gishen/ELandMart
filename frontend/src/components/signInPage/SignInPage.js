@@ -10,6 +10,7 @@ import PhoneInput from "react-phone-number-input";
 import YearPicker from "react-year-picker";
 
 import "react-datepicker/dist/react-datepicker.css";
+import Footer from "../commonComponents/Footer";
 export default class SignInPage extends Component {
   constructor(props) {
     super(props);
@@ -181,6 +182,7 @@ export default class SignInPage extends Component {
             < a href="Login">Already have a Account?</a>
           </form>
         </div>
+
       </div>
     );
   }

@@ -3,6 +3,7 @@ import NavigationBar from "../commonComponents/NavigationBar";
 import "../../assets/contactUs/bootstrap/css/bootstrap.min.css";
 import "../../assets/contactUs/css/styles.css";
 import "../../assets/contactUs/css/Contact-Form-Clean.css";
+import Footer from "../commonComponents/Footer";
 
 export default class AboutUs extends Component{
     render() {
@@ -31,6 +32,9 @@ export default class AboutUs extends Component{
                         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
                         <script src="assets/js/smart-forms.min.js"></script>
                         </body>
+                <div style={{marginRight:'-12%',marginLeft:'-12%',marginBottom:'-15%'}}>
+                    <Footer/>
+                </div>
 
                     </div>
 

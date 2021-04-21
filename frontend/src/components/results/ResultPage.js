@@ -61,6 +61,7 @@ componentWillMount() {
 <h1 class ="text">Lane: {this.props.lane} </h1>
 <h1 class ="text">Predicted Value:  {this.state.apiResponse} </h1>
         </div>
+
       
       </div>
     );

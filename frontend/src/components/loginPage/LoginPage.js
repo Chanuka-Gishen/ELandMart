@@ -5,6 +5,7 @@ import "../../assets/loginPageAssets/bootstrap/css/bootstrap.min.css";
 import "../../assets/loginPageAssets/css/OcOrato---Login-form.css";
 import "../../assets/loginPageAssets/css/OcOrato---Login-form-1.css";
 import "../../assets/loginPageAssets/css/styles.css";
+import Footer from "../commonComponents/Footer";
 // import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
 // import "https://fonts.googleapis.com/css?family=Quicksand";
 export default class LoginPage extends Component{
@@ -69,6 +70,7 @@ export default class LoginPage extends Component{
                            
                     </form>
                 </div>
+
             </div>
 
         );

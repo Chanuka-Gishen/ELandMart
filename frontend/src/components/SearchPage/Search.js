@@ -1,6 +1,7 @@
 import React, { Component, useState, useEffect } from "react";
 import NavigationBar from "../commonComponents/NavigationBar";
 import axios from "axios";
+import Footer from "../commonComponents/Footer";
 
 const FeaturesPage = () =>  {
     const [lankaPropertyUrl, getLankaUrl] = useState([])
@@ -76,6 +77,9 @@ const FeaturesPage = () =>  {
             </div>
           </div>
         </div>
+          <div style={{marginRight:'-12%',marginLeft:'-12%',marginBottom:'-15%'}}>
+              <Footer/>
+          </div>
       </div>
     );
 }

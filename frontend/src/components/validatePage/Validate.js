@@ -8,6 +8,7 @@ import Cards from "../homePage/Cards/Cards";
 import { Router, Switch, Route } from "react-router-dom";
 import { render } from "@testing-library/react";
 import axios from "axios";
+import Footer from "../commonComponents/Footer";
 
 export default class Validate extends Component {
   constructor(props) {
@@ -231,6 +232,7 @@ export default class Validate extends Component {
       <div style={{ background: "white" }}>
         <NavigationBar />
         {renderer}
+
       </div>
     );
   }

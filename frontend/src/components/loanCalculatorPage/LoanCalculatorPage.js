@@ -6,6 +6,7 @@ import "../../assets/loanCalculatorAssets/bootstrap/js/bootstrap.min.js";
 import "../../assets/loanCalculatorAssets/css/styles.css";
 import "../../assets/loanCalculatorAssets/fonts/font-awesome.min.css";
 import "../../assets/loanCalculatorAssets/js/jquery.min";
+import Footer from "../commonComponents/Footer";
 export default class LoanCalculatorPage extends Component{
     
     constructor(props) {
@@ -39,10 +40,10 @@ export default class LoanCalculatorPage extends Component{
            
         }     
         return (
-          
+
             <div class =" background" >
                 <NavigationBar/>
-                
+                <div>
                 <body>
                 <form class="bootstrap-form-with-validation">
                         <h2 class="text-center">Get Start with the Loan Calculator</h2>
@@ -60,7 +61,14 @@ export default class LoanCalculatorPage extends Component{
 
             </form>
                 </body>
+
             </div>
+                <div style={{marginRight:'-12%',marginLeft:'-12%',marginBottom:'-15%'}}>
+                    <Footer/>
+                </div>
+          </div>
+
+
         );
     }
 
