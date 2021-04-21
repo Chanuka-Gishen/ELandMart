@@ -19,6 +19,7 @@ export default class Validate extends Component {
       distanceToRoad: "",
       lane: "",
       status: true,
+      data:[],
     };
     this.setSizeOfLand = this.setSizeOfLand.bind(this);
     this.setLandType = this.setLandType.bind(this);
@@ -58,7 +59,7 @@ export default class Validate extends Component {
     if (
       this.state.size === "" ||
       this.state.type === "" ||
-      this.state.distanceToRoad === "" 
+      this.state.distanceToRoad === ""
       
     ) {
       alert("Fill all fields!");
@@ -75,12 +76,24 @@ export default class Validate extends Component {
             "2020"
         ])
       })
+      fetch("http://127.0.0.1:8000/valuate/get_valuate_inputs/",{
+        method:'POST',
+        headers:{
+            'Accept':'application/json',
+            'Content-Type':'application/json'
+        },
+        body:JSON.stringify([
+          this.state.distanceToRoad,
+          this.size,
+          "2020"
+      ])
+      })
+      
       render(
         <ResultPage
           size={this.state.size}
           type={this.state.type}
           distance={this.state.distanceToRoad}
-          
           lane = {this.state.Lanesnames}
         />
       );
@@ -89,16 +102,6 @@ export default class Validate extends Component {
   }
 
   dataEnter(event) {}
-
-  callAPI() {
-    fetch("http://127.0.0.1:8000/weburl/")
-      .then((res) => res.text())
-      .then((res) => this.setState({ apiResponse: res }));
-  }
-
-  componentWillMount() {
-    this.callAPI();
-  }
 
   render() {
     const isTrue = this.state.status;
@@ -169,12 +172,10 @@ export default class Validate extends Component {
               /> */}
               <label for="lane">
                 {" "}
-                <b>  Lane &nbsp;&nbsp;&nbsp;&nbsp; </b>
-                
+                <b>Lane</b>
               </label>
               
                 <select>
-                
                   <option selected disabled ="true">---Select Lane---</option>
                   {
                     lanes.Lanesnames.map((result)=> (<option >{result.lane}</option>))
@@ -190,7 +191,6 @@ export default class Validate extends Component {
 
               <p className="App-intro">{this.state.apiResponse}</p>
             </div>
-            <p>Limited to Galle District....</p>
           </form>
         </div>
       );

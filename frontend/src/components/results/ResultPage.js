@@ -21,8 +21,19 @@ export default class ResultPage extends Component {
     email:"",
     password:"",
     name:props.name,
-};
+    apiResponse:"",
+  };
+  
+}
 
+callAPI() {
+  fetch("http://127.0.0.1:8000/valuate/give_predictions/")
+      .then((res) => res.text())
+      .then((res) => this.setState({ apiResponse: res }));
+}
+
+componentWillMount() {
+  this.callAPI();
 }
 
 
@@ -48,7 +59,7 @@ export default class ResultPage extends Component {
 <h1 class ="text">Land type: {this.props.type} </h1>
 <h1 class ="text">Distance to Main Road: {this.props.distance} metres </h1>
 <h1 class ="text">Lane: {this.props.lane} </h1>
-<h1 class ="text">Predicted Value:  {this.props.predicteds} </h1>
+<h1 class ="text">Predicted Value:  {this.state.apiResponse} </h1>
         </div>
       
       </div>

@@ -32,5 +32,6 @@ urlpatterns = [
     path('loancal/', include('user.urls')),
     path('auth/', obtain_auth_token),
     path('give_predictions/', include('user.urls')),
+    path('get_valuate_inputs/', include('valuate.urls')),
 
 ]

@@ -10,6 +10,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
+input_data = []
+
 def index(response):
     return HttpResponse("Connected")
 
@@ -47,6 +49,12 @@ def give_predictions(response):
     dfin.head()
 
     output=lr.intercept_+lr.coef_[0]*dfin.at[0,'Distance_Nearest_Town']+lr.coef_[1]*dfin.at[0,'Perch']+lr.coef_[2]*dfin.at[0,'Year']
-    return HttpResponse(output)
+    num = round(output, 2)
+    return HttpResponse(num)
 
+@csrf_exempt
+def get_valuate_inputs(request):
+    user_inputs = JSONParser().parse(request)
+    input_data = user_inputs
+    return HttpResponse("Input Saved successfully..!")
 
