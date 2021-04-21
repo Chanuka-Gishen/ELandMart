@@ -14,7 +14,7 @@ export default class LoanCalculatorPage extends Component{
     }
 
     callAPI() {
-        fetch("http://localhost:8080/getLoanAmount")
+        fetch("http://127.0.0.1:8000/user/loancal/")
             .then(res => res.text())
             .then(res => this.setState({ apiResponse: res }));
     }

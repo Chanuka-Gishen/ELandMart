@@ -27,4 +27,5 @@ urlpatterns = [
     path('user/', include('user.urls')),
     path('addnewuser/', include('user.urls')),
     path('getusers/', include('user.urls')),
+    path('loancal/', include('user.urls')),
 ]
