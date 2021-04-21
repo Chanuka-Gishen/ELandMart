@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../../assets/jsonFiles/jsonparserArea.py";
 import "../../assets/validatePageAssets/Validate.css";
 import NavigationBar from "../commonComponents/NavigationBar";
 import ResultPage from "../results/ResultPage";
@@ -48,6 +49,10 @@ export default class Validate extends Component {
       this.setState({ distanceToRoad: event.target.value });
     }
   }
+   setLane(event) {
+      this.setState({ status : true});
+    }
+  
 
   Loader(event) {
     if (
@@ -64,6 +69,7 @@ export default class Validate extends Component {
           type={this.state.type}
           distance={this.state.distanceToRoad}
           location={this.state.location}
+          lane = {this.state.lane}
         />
       );
       this.setState({ status: false });
@@ -149,6 +155,21 @@ export default class Validate extends Component {
                 required
                 onChange={this.setLocation}
               />
+              <label for="lane">
+                {" "}
+                <b>Lane</b>
+              </label>
+              
+                <select>
+                  <option selected disabled ="true">---Select Lane---</option>
+                  {
+                    
+                  <option></option>
+                  }
+                onChange={this.setLane}
+                </select> 
+              
+
 
               <button type="submit" class="validatebtn" onClick={this.Loader}>
                 Validate
