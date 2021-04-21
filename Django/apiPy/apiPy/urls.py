@@ -25,7 +25,7 @@ urlpatterns = [
     path('ceylonLanka/', include('weburl.urls')),
     path('valuate/', include('valuate.urls')),
     path('city/<city>', include('valuate.urls')),
-    path('modelInput/', include('valuate.urls')),
+    path('export_csv/', include('valuate.urls')),
     path('user/', include('user.urls')),
     path('addnewuser/', include('user.urls')),
     path('getusers/', include('user.urls')),

@@ -4,5 +4,5 @@ from . import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('city/<city>', views.getCity, name="city"),
-    path('modelInput/', views.getModelInputs),
+    path('export_csv/', views.export_csv),
 ]
