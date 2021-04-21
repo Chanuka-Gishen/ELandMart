@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import NavigationBar from "../commonComponents/NavigationBar";
+import Footer from "../commonComponents/Footer";
 import "../../assets/aboutUsAssets/bootstrap/css/bootstrap.min.css";
 import "../../assets/aboutUsAssets/css/styles.css";
-// import "../../assets/aboutUsAssets/fonts/font-awesome.min.css";
 import "../../assets/aboutUsAssets/css/Team-Boxed.css";
 import Avishka from "../../assets/aboutUsAssets/img/Avishka.jpeg";
 import Damith from "../../assets/aboutUsAssets/img/Damith.jpeg";
@@ -10,6 +10,7 @@ import Hansaka from "../../assets/aboutUsAssets/img/Hansaka.jpeg";
 import Chanuka from "../../assets/aboutUsAssets/img/Chanuka.jpeg";
 import Charith from "../../assets/aboutUsAssets/img/Charith.jpeg";
 import Kasun from "../../assets/aboutUsAssets/img/Kasun.jpeg";
+
 export default class AboutUs extends Component{
     render() {
         return(
@@ -192,9 +193,11 @@ export default class AboutUs extends Component{
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
+                    <div style={{marginRight:'-12%',marginLeft:'-12%',marginBottom:'-15%'}}>
+                        <Footer/>
+                    </div>
             </div>
 
         );
