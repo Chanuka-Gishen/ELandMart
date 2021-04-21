@@ -33,24 +33,7 @@ const FeaturesPage = () =>  {
     return (
       <div>
         <NavigationBar />
-        <div>
-          <ul class="nav nav-tabs" id="myTab">
-            <li class="active">
-              <a data-target="#home" data-toggle="tab">
-                BBC
-              </a>
-            </li>
-            <li>
-              <a data-target="#profile" data-toggle="tab">
-                CNN
-              </a>
-            </li>
-            <li>
-              <a data-target="#messages" data-toggle="tab">
-                Sky news
-              </a>
-            </li>
-          </ul>
+        <div style={{marginTop:"15%"}}>
 
           <div class="tab-content" >
             <div class="tab-pane active" id="home">
