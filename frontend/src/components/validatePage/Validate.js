@@ -63,6 +63,19 @@ export default class Validate extends Component {
     ) {
       alert("Fill all fields!");
     } else {
+      fetch("http://127.0.0.1:8000/valuate/modelInput/",{
+        method:'POST',
+        headers:{
+            'Accept':'application/json',
+            'Content-Type':'application/json'
+        },
+        body:JSON.stringify({
+            "Distance_Nearest_Town":this.state.distanceToRoad,
+            "Perch":this.state.size,
+            "Year":"2020"
+
+        })
+      })
       render(
         <ResultPage
           size={this.state.size}
