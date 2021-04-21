@@ -65,6 +65,8 @@ export default class LoginPage extends Component{
                                color: 'rgb(177,151,70)'
                            }}
                            href="#">Forgot your e mail or password?</a>
+                           <a href = "signInPage">      Don't have account? </a>
+                           
                     </form>
                 </div>
             </div>
