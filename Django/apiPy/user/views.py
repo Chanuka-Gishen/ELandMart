@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.parsers import JSONParser
 from django.http.response import JsonResponse
+from django.http import HttpResponse
 
 from user.models import UserDetails
 from user.serializers import UserSerializer
@@ -24,6 +25,9 @@ def getusers(request):
 
 def index(request):
     return HttpResponse("Curd Opertations")
+
+def loancalculator(request):
+    return HttpResponse("Connected")
 
         
 

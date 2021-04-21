@@ -23,7 +23,6 @@ export default class SignInPage extends Component {
       name:"",
     };
     this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
     this.setage=this.setage.bind(this);
     this.setName=this.setName.bind(this);
     this.setPassword=this.setPassword.bind(this);
@@ -57,6 +56,8 @@ export default class SignInPage extends Component {
       this.setState({age:ageCal})
       console.log(ageCal);
 
+      console.log(this.state.name, this.state.email, this.state.password, this.state.phoneNumber)
+
       //api call hear after validating all the data
       fetch("http://127.0.0.1:8000/user/addnewuser/",{
         method:'POST',
@@ -65,10 +66,10 @@ export default class SignInPage extends Component {
             'Content-Type':'application/json'
         },
         body:JSON.stringify({
-            user_name:this.name,
-            user_email:this.email,
-            user_password:this.password,
-            user_mobileNo:this.phoneNumber
+            user_name:this.state.name,
+            user_email:this.state.email,
+            user_password:this.state.password,
+            user_mobileNo:this.state.phoneNumber
 
         })
       })
@@ -77,16 +78,12 @@ export default class SignInPage extends Component {
           alert(result);
       },
       (error)=>{
-          alert('Failed');
+          alert("failed");
       });
-      console.log(this.name, this.email, this.password, this.phoneNumber)
     }
   };
 
-  handleSubmit(){
-    event.preventDefault();
-    
-}
+
 
 
   render() {
@@ -96,7 +93,6 @@ export default class SignInPage extends Component {
         <div>
           <form
             id="form"
-            onSubmit={this.handleSubmit}
             style={{
               fontFamily: "Quicksand, sans-serif",
               backgroundColor: "rgba(44,40,52,0.73)",
@@ -182,7 +178,7 @@ export default class SignInPage extends Component {
             >
               Sign Up
             </button>
-            
+            < a href="Login">Already have a Account?</a>
           </form>
         </div>
       </div>
