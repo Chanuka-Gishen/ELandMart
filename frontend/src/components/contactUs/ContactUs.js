@@ -16,7 +16,7 @@ export default class AboutUs extends Component{
                             <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css"></link>
                             <link rel="stylesheet" href="assets/css/styles.css"></link>
                         </head>
->>>>>>> origin/main
+
 
                         <body>
                         <section class="contact-clean">

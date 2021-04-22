@@ -41,9 +41,14 @@ export default class Validate extends Component {
   setLandType(event) {
     this.setState({ type: event.target.value });
   }
-  setYear(event) {
-    this.setYear({ year: event.target.value });
-  }
+  setLane = (event) => {
+    this.setState({ lane: event.target.value });
+  };
+
+  setYear = (event) => {
+    this.setState({ year: event.target.value });
+  };
+
   setStatus() {
     this.setState({ status: true });
   }
@@ -52,9 +57,6 @@ export default class Validate extends Component {
     if (event.target.value === "" || re.test(event.target.value)) {
       this.setState({ distanceToRoad: event.target.value });
     }
-  }
-  setLane(event) {
-    this.setState({ lane: event.target.value });
   }
 
   Loader(event) {
@@ -74,24 +76,31 @@ export default class Validate extends Component {
         body: JSON.stringify([
           this.state.distanceToRoad,
           this.state.size,
-          "2020",
+          this.state.year,
         ]),
       });
-      fetch("https://e-landmart-api.herokuapp.com/valuate/get_valuate_inputs/", {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify([this.state.distanceToRoad, this.size, "2020"]),
-      });
+      fetch(
+        "https://e-landmart-api.herokuapp.com/valuate/get_valuate_inputs/",
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify([
+            this.state.distanceToRoad,
+            this.state.size,
+            this.state.year,
+          ]),
+        }
+      );
 
       render(
         <ResultPage
           size={this.state.size}
           type={this.state.type}
           distance={this.state.distanceToRoad}
-          lane={this.state.Lanesnames}
+          lane={this.state.lane}
         />
       );
       this.setState({ status: false });
@@ -113,12 +122,15 @@ export default class Validate extends Component {
             backgroundColor: "white",
           }}
         >
-          <h1>Land Value Calculation</h1><br></br>
-          <p style={{marginRight: "-12%",
-            marginLeft: "12%",}}>Please enter your Land details to validate</p>
+          <h1>Land Value Calculation</h1>
+          <br></br>
+          <p style={{ marginRight: "-12%", marginLeft: "12%" }}>
+            Please enter your Land details to validate
+          </p>
           <hr />
-          <table style={{ width: "80%",marginRight: "-12%",
-            marginLeft: "12%", }}>
+          <table
+            style={{ width: "80%", marginRight: "-12%", marginLeft: "12%" }}
+          >
             <tr>
               <td>
                 <label for="landSize">
@@ -136,27 +148,6 @@ export default class Validate extends Component {
                   required
                   onChange={this.setSizeOfLand}
                 />
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <label for="landType">
-                  {" "}
-                  <b>Land Type</b>
-                </label>
-              </td>
-              <td>
-              <select>
-                  <option selected disabled="true">
-                    ---Select Land Type---
-                  </option>
-                 <option>Bare Land</option>
-                 <option>Urban/Built-up Land</option>
-                 <option>Wetland</option>
-                 <option>Agricultural Land</option>
-                  onChange={this.setLane}
-                </select>
               </td>
             </tr>
 
@@ -182,19 +173,17 @@ export default class Validate extends Component {
             <tr>
               <td>
                 <label for="year">
-                  {" "}
                   <b>Year</b>
                 </label>
               </td>
               <td>
-                {" "}
                 <input
-                  type="int"
+                  type="text"
                   placeholder="Enter The Predict Year"
                   name="year"
                   id="year"
-                  required
                   value={this.state.year}
+                  required
                   onChange={this.setYear}
                 />
               </td>
@@ -207,14 +196,33 @@ export default class Validate extends Component {
                 </label>
               </td>
               <td>
-                <select>
+                <select value={this.state.lane} onChange={this.setLane}>
                   <option selected disabled="true">
                     ---Select Lane---
                   </option>
                   {lanes.Lanesnames.map((result) => (
                     <option>{result.lane}</option>
                   ))}
-                  onChange={this.setLane}
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="landType">
+                  {" "}
+                  <b>Land Type</b>
+                </label>
+              </td>
+              <td>
+                <select value={this.state.type} onChange={this.setLandType}>
+                  <option selected disabled="true">
+                    ---Select Land Type---
+                  </option>
+                  <option>Bare Land</option>
+                  <option>Urban/Built-up Land</option>
+                  <option>Wetland</option>
+                  <option>Agricultural Land</option>
                 </select>
               </td>
             </tr>
@@ -236,7 +244,6 @@ export default class Validate extends Component {
       <div style={{ background: "white" }}>
         <NavigationBar />
         {renderer}
-
       </div>
     );
   }
