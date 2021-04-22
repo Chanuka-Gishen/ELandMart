@@ -63,7 +63,7 @@ export default class LoanCalculatorPage extends Component{
                 
 
             
-                <div style={{marginRight:'-12%',marginLeft:'-12%',marginBottom:'-15%'}}>
+                <div style={{marginRight:'-12%',marginLeft:'-15%',marginBottom:'-15%'}}>
                     <Footer/>
                 </div>
                 </form>

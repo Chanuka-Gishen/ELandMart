@@ -6,12 +6,12 @@ video {
     z-index: -1;
   }
   #background-img{
-    background: url('../loginPageAssets/img/Wallpapers\ 1366x768.jpg') center center/cover no-repeat;
+    background: url('../homePageAssets/wallpaper.png') center center/cover no-repeat;
     
   }
   
   .hero-container {
-    /* background: url('../loginPageAssets/img/Wallpapers\ 1366x768.jpg') center center/cover no-repeat; */
+    
     height: 100vh;
     width: 100%;
     display: flex;
