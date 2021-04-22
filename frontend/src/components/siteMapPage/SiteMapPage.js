@@ -2,13 +2,27 @@ import React, {Component} from "react";
 import NavigationBar from "../commonComponents/NavigationBar";
 import "../../assets/siteMapAssets/Styles.css";
 export default class SiteMapPage extends Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+          apiResponse_json: ""
+        };
+    }
+
+    callAPI(){
+        fetch("https://e-landmart-api.herokuapp.com/valuate/get_data/")
+        .then((res) => res.text())
+        .then((res) => this.setState({ apiResponse_json: res }));
+    }
+    componentWillMount() {
+        this.callAPI();
+    }
     render() {
         return(
             <div>
                 <NavigationBar/>
                 <div id = "resultcontainer" >
                     <div className="intro" style={{top:'10'}}>
-
 
                         <body>
                         <section class="mt-4">
