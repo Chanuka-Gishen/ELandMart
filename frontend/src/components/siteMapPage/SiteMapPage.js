@@ -84,7 +84,7 @@ export default class SiteMapPage extends Component{
                                                 </tr>
                                                 </tbody>
                                             </table>
-                                            <button class="btn btn-info exportToExcel ml-2 mb-2" type="button"><strong>Fuck</strong></button>
+                                            <button class="btn btn-info exportToExcel ml-2 mb-2" type="button"><strong>Check</strong></button>
                                         </div>
                                     </div>
                                 </div>
