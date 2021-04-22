@@ -155,7 +155,7 @@ export default class Validate extends Component {
               <td>
                 <label for="distanceToRoad">
                   {" "}
-                  <b>Distance To The Main Road</b>
+                  <b>Distance To The  Galle Town</b>
                 </label>
               </td>
               <td>
