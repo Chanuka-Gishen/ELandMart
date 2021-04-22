@@ -33,8 +33,10 @@ export default class Validate extends Component {
   }
 
   setSizeOfLand(event) {
-    const re = /^[0-9\b]+$/;
-    if (event.target.value === "" || re.test(event.target.value)) {
+    if (!Number(event.target.value)) {
+      alert("Land Size Must Be a NUMBER!");
+      
+    } else {
       this.setState({ size: event.target.value });
     }
   }
@@ -46,15 +48,20 @@ export default class Validate extends Component {
   };
 
   setYear = (event) => {
-    this.setState({ year: event.target.value });
+    if (!Number(event.target.value)) {
+      alert("Year Must Be a NUMBER!");
+    } else {
+      this.setState({ year: event.target.value });
+    }
   };
 
   setStatus() {
     this.setState({ status: true });
   }
   setDistance(event) {
-    const re = /^[0-9\b]+$/;
-    if (event.target.value === "" || re.test(event.target.value)) {
+    if (!Number(event.target.value)) {
+      alert("Distance Must Be a NUMBER!");
+    } else {
       this.setState({ distanceToRoad: event.target.value });
     }
   }
@@ -154,8 +161,7 @@ export default class Validate extends Component {
             <tr>
               <td>
                 <label for="distanceToRoad">
-                  {" "}
-                  <b>Distance To The  Galle Town</b>
+                  <b>Distance To The Galle Town</b>
                 </label>
               </td>
               <td>
@@ -170,6 +176,7 @@ export default class Validate extends Component {
                 />
               </td>
             </tr>
+
             <tr>
               <td>
                 <label for="year">
