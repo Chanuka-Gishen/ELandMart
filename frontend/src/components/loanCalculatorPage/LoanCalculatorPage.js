@@ -59,13 +59,16 @@ export default class LoanCalculatorPage extends Component{
                 <div class="form-group"><button class="btn btn-primary" onClick={computeLoan}>Calculate</button></div>
                 <div class="form-group2"><h2 id="payment"></h2></div>
 
-            </form>
-                </body>
+           
+                
 
-            </div>
+            
                 <div style={{marginRight:'-12%',marginLeft:'-12%',marginBottom:'-15%'}}>
                     <Footer/>
                 </div>
+                </form>
+          </body>
+          </div>
           </div>
 
 

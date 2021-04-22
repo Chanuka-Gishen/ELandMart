@@ -147,14 +147,16 @@ export default class Validate extends Component {
                 </label>
               </td>
               <td>
-                {" "}
-                <input
-                  type="text"
-                  name="type"
-                  id="landType"
-                  required
-                  onChange={this.setLandType}
-                />
+              <select>
+                  <option selected disabled="true">
+                    ---Select Land Type---
+                  </option>
+                 <option>Bare Land</option>
+                 <option>Urban/Built-up Land</option>
+                 <option>Wetland</option>
+                 <option>Agricultural Land</option>
+                  onChange={this.setLane}
+                </select>
               </td>
             </tr>
 
@@ -224,6 +226,7 @@ export default class Validate extends Component {
               </td>
             </tr>
           </table>
+          <p>Price predicting limited Galle Area.........</p>
         </div>
       );
     }
