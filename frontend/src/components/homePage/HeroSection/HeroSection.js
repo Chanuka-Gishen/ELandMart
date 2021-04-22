@@ -5,8 +5,9 @@ import '../../../assets/homePageAssets/HeroSection.css';
 
 function HeroSection() {
   return (
+    <div id = "background-img" style = {{marginright:'-80%'}}>
     <div className='hero-container'>
-      <video src='/videos/video-2.mp4' autoPlay loop muted />
+      {/* <video src='/videos/video-2.mp4' autoPlay loop muted /> */}
       <h1>Welcome to E-Land Mart</h1>
       <p>Buy the best  Land worth Your Money</p>
       <div className='hero-btns'>
@@ -29,6 +30,7 @@ function HeroSection() {
 
         </Button>
       </div>
+    </div>
     </div>
   );
 }

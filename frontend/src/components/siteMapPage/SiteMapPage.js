@@ -6,7 +6,7 @@ export default class SiteMapPage extends Component{
         return(
             <div>
                 <NavigationBar/>
-                <div className="container">
+                <div id = "resultcontainer" >
                     <div className="intro" style={{top:'10'}}>
 
 
