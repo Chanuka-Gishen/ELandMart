@@ -104,7 +104,7 @@ export default class NavigationBar extends Component {
                                 <li className="nav-item">
                                     <a
                                         className="nav-link"
-                                        href={'#'}>
+                                        href={'/TechnologyPage'}>
                                             Technologies
                                     </a>
                                 </li>

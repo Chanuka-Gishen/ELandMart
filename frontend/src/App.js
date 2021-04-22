@@ -11,6 +11,7 @@ import Validate from "./components/validatePage/Validate";
 import ContactUs from "./components/contactUs/ContactUs";
 import LoanCalculatorPage from "./components/loanCalculatorPage/LoanCalculatorPage";
 import Search from "./components/SearchPage/Search";
+import TechnologyPage from "./components/technologyPage/TechnologyPage";
 import {
   BrowserRouter as Router,
     Switch,
@@ -36,6 +37,7 @@ function App() {
               <Route path="/validate" exact component={Validate}/>
               <Route path="/contactUs" exact component={ContactUs}/>
               <Route path="/loanCalculatorPage" exact component={LoanCalculatorPage}/>
+              <Route path="/TechnologyPage" exact component={TechnologyPage}/>
           </Switch>
         </Router>
       </div>
