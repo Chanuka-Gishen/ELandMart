@@ -22,6 +22,20 @@ export default class ResultPage extends Component {
     fetch("https://e-landmart-api.herokuapp.com/valuate/give_predictions/")
       .then((res) => res.text())
       .then((res) => this.setState({ apiResponse: res }));
+    fetch("https://e-landmart-api.herokuapp.com/valuate/generated_result/",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify([
+          this.props.type,
+          this.props.distance
+        ]),
+      }
+    ).then((res) => res.text())
+    .then((res) => this.setState({ usage: res }));
   }
 
   componentWillMount() {
@@ -48,7 +62,7 @@ export default class ResultPage extends Component {
           <h1 class="text">Distance to Main Road: {this.props.distance} metres{" "}</h1>
           <h1 class="text">Lane: {this.props.lane} </h1>
           <h1 class="text">Predicted Value: {this.state.apiResponse} </h1>
-          <p>type useage</p>
+          <p>{this.state.usage}</p>
         </div>
       </div>
     );
