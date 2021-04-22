@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import logo1 from '../../assets/footerAssets/images/logo1.png';
 import '../../assets/footerAssets/bootstrap/css/bootstrap.min.css';
 import '../../assets/footerAssets/fonts/font-awesome.min.css';
 import '../../assets/footerAssets/css/Bold-BS4-Footer-Big-Logo.css';
@@ -11,20 +12,19 @@ export default class Footer extends Component{
                     <div className="container-fluid">
                         <div className="row text-center">
                             <div className="col-12 col-sm-6 col-md-3">
-                                <h1
-                                    className="logo"
-                                    style={{marginTop:'30px'}}>
-                                    <a href="#">LOGO</a>
-                                </h1>
+                            <img className="rounded img-fluid pulse animated"
+                                 id="image"
+                                 style={{width: 'auto', height: 'auto'}}
+                                 src={logo1} alt="Logo"/>
                             </div>
                             <div className="col-12 col-sm-6 col-md-2">
                                 <h5>Get started</h5>
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Downloads</a></li>
+                                    <li><a href="homePage">Home</a></li>
+                                    <li><a href="validate">Price Prediction</a></li>
                                     <br></br>
-                                    <li><a href="#">Sign Up</a></li>
-                                    <li><a href="#">Other Links</a></li>
+                                    <li><a href="signInPage">Sign Up</a></li>
+                                    <li><a href="loanCalculatorPage">Loan Calculator</a></li>
                                 </ul>
                             </div>
                             <div className="col-12 col-sm-6 col-md-2">
@@ -32,11 +32,10 @@ export default class Footer extends Component{
                                     Our Company
                                 </h5>
                                 <ul>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Company Information</a></li>
+                                    <li><a href="aboutUs">About Us</a></li>
+                                   
                                     <br></br>
-                                    <li><a href="#">Reviews</a></li>
-                                    <li><a href="#">Contacts</a></li>
+                                    <li><a href="contactUs">Contacts</a></li>
                                 </ul>
                             </div>
                             <div className="col-sm-6 col-md-2">
@@ -71,19 +70,10 @@ export default class Footer extends Component{
                                     href="#">
                                     <i className="fa fa-linkedin"/>
                                 </a>
-                                <button
-                                    className="btn btn-primary"
-                                    style={{marginTop:'20px'}}
-                                    type="button">
-                                        Contact us
-                                </button>
+                                
                             </div>
                         </div>
-                        <div className="row footer-copyright">
-                            <div className="col">
-                                <p></p>
-                            </div>
-                        </div>
+                        
                     </div>
 
                 </footer>

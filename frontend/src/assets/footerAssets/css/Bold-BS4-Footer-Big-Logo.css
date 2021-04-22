@@ -1,7 +1,11 @@
 #myFooter {
+  position: relative;
   background-color: #3c3d41;
   color: white;
   padding-top: 30px;
+  width:100%;
+  height:280px ;
+  
 }
 
 #myFooter .footer-copyright {
@@ -88,7 +92,7 @@
   line-height: 25px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px){
   #myFooter {
     text-align: center;
   }
