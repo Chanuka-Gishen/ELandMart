@@ -47,7 +47,7 @@ export default class Validate extends Component {
     this.setState({ lane: event.target.value });
   };
 
-  setYear = (event) => {
+  setYear  (event) {
     if (!Number(event.target.value)) {
       alert("Year Must Be a NUMBER!");
     } else {
@@ -108,6 +108,7 @@ export default class Validate extends Component {
           type={this.state.type}
           distance={this.state.distanceToRoad}
           lane={this.state.lane}
+          year={this.state.year}
         />
       );
       this.setState({ status: false });
@@ -204,7 +205,7 @@ export default class Validate extends Component {
               </td>
               <td>
                 <select value={this.state.lane} onChange={this.setLane}>
-                  <option selected disabled="true">
+                  <option>
                     ---Select Lane---
                   </option>
                   {lanes.Lanesnames.map((result) => (
@@ -223,7 +224,7 @@ export default class Validate extends Component {
               </td>
               <td>
                 <select value={this.state.type} onChange={this.setLandType}>
-                  <option selected disabled="true">
+                  <option >
                     ---Select Land Type---
                   </option>
                   <option>Bare Land</option>
@@ -242,7 +243,7 @@ export default class Validate extends Component {
               </td>
             </tr>
           </table>
-          <p>Price predicting limited Galle Area.........</p>
+          <h3>Price predicting limited Galle Area.........</h3>
         </div>
       );
     }
