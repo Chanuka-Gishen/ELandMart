@@ -60,7 +60,7 @@ export default class SignInPage extends Component {
       console.log(this.state.name, this.state.email, this.state.password, this.state.phoneNumber)
 
       //api call hear after validating all the data
-      fetch("http://127.0.0.1:8000/user/addnewuser/",{
+      fetch("https://e-landmart-api.herokuapp.com/user/addnewuser/",{
         method:'POST',
         headers:{
             'Accept':'application/json',

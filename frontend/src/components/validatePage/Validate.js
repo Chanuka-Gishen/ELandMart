@@ -65,7 +65,7 @@ export default class Validate extends Component {
     ) {
       alert("Fill all fields!");
     } else {
-      fetch("http://127.0.0.1:8000/valuate/export_csv/", {
+      fetch("https://e-landmart-api.herokuapp.com/valuate/export_csv/", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -77,7 +77,7 @@ export default class Validate extends Component {
           "2020",
         ]),
       });
-      fetch("http://127.0.0.1:8000/valuate/get_valuate_inputs/", {
+      fetch("https://e-landmart-api.herokuapp.com/valuate/get_valuate_inputs/", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -194,6 +194,7 @@ export default class Validate extends Component {
                   name="year"
                   id="year"
                   required
+                  value={this.state.year}
                   onChange={this.setYear}
                 />
               </td>

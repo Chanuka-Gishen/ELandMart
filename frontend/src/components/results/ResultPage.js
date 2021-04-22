@@ -27,7 +27,7 @@ export default class ResultPage extends Component {
 }
 
 callAPI() {
-  fetch("http://127.0.0.1:8000/valuate/give_predictions/")
+  fetch("https://e-landmart-api.herokuapp.com/valuate/give_predictions/")
       .then((res) => res.text())
       .then((res) => this.setState({ apiResponse: res }));
 }

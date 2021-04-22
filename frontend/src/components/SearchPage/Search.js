@@ -9,9 +9,9 @@ const FeaturesPage = () =>  {
     const [ikmanlkUrl, getIkmanlkUrl] = useState([])
 
     const fetchData = () => {
-      const getFisrtUrl = axios.get("http://127.0.0.1:8000/weburl/lankaProperty/")
-      const getSecondUrl = axios.get("http://127.0.0.1:8000/weburl/ceylonLanka/")
-      const getThirdUrl = axios.get("http://127.0.0.1:8000/weburl/ikmanlk/")
+      const getFisrtUrl = axios.get("https://e-landmart-api.herokuapp.com/weburl/lankaProperty/")
+      const getSecondUrl = axios.get("https://e-landmart-api.herokuapp.com/weburl/ceylonLanka/")
+      const getThirdUrl = axios.get("https://e-landmart-api.herokuapp.com/weburl/ikmanlk/")
       axios.all([getFisrtUrl, getSecondUrl, getThirdUrl]).then(
         axios.spread((...allData) => {
           const stringLankaPropertyUrl = allData[0].config.urls
