@@ -13,14 +13,8 @@ export default class ResultPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      save: "",
-      phoneNumber: "",
-      startDate: "",
-      age: "",
-      email: "",
-      password: "",
-      name: props.name,
       apiResponse: "",
+      usage:"",
     };
   }
 
@@ -54,6 +48,7 @@ export default class ResultPage extends Component {
           <h1 class="text">Distance to Main Road: {this.props.distance} metres{" "}</h1>
           <h1 class="text">Lane: {this.props.lane} </h1>
           <h1 class="text">Predicted Value: {this.state.apiResponse} </h1>
+          <p>type useage</p>
         </div>
       </div>
     );
