@@ -38,12 +38,7 @@ export default class AboutUs extends Component{
                                         <p className="title"style={{color:"#000000"}}>
                                             <i>Backend Developer</i>
                                         </p>
-                                        <p className="description"style={{color:"#000000"}}>
-                                            Aenean tortor est, vulputate quis leo in, vehicula
-                                            rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus
-                                            est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper
-                                            massa.
-                                        </p>
+                                        
                                         <div className="social">
                                             <a href="#000000">
                                                 <i className="fa fa-facebook-official"/>
@@ -66,11 +61,7 @@ export default class AboutUs extends Component{
                                             <b>Charith Wellala</b>
                                         </h3>
                                         <p className="title">Frontend Developer</p>
-                                        <p className="description" style={{color:"#000000"}}>Aenean tortor est, vulputate quis leo in, vehicula
-                                            rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus
-                                            est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper
-                                            massa.
-                                        </p>
+                                       
                                         <div className="social">
                                             <a href="https://www.facebook.com/charith.lakmal.3">
                                                 <i className="fa fa-facebook-official"/>
@@ -95,12 +86,7 @@ export default class AboutUs extends Component{
                                         <p className="title">
                                             Frontend Developer
                                         </p>
-                                        <p className="description"style={{color:"#000000"}}>
-                                            Aenean tortor est, vulputate quis leo in, vehicula
-                                            rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus
-                                            est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper
-                                            massa.
-                                        </p>
+                                       
                                         <div className="social">
                                             <a href="https://www.facebook.com/avishka.lakshan/">
                                                 <i className="fa fa-facebook-official"/>
@@ -127,12 +113,7 @@ export default class AboutUs extends Component{
                                         <p className="title">
                                             Backend Developer
                                         </p>
-                                        <p className="description">
-                                            Aenean tortor est, vulputate quis leo in, vehicula
-                                            rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus
-                                            est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper
-                                            massa.
-                                        </p>
+                                       
                             
                                     </div>
                                 </div>
@@ -143,11 +124,7 @@ export default class AboutUs extends Component{
                                              src={Hansaka} alt={""}/>
                                         <h3 className="name"><b>Hansaka Konara</b></h3>
                                         <p className="title">Frontend Developer</p>
-                                        <p className="description">Aenean tortor est, vulputate quis leo in, vehicula
-                                            rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus
-                                            est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper
-                                            massa.
-                                        </p>
+                                       
                                         <div className="social">
                                             <a href="#">
                                                 <i className="fa fa-facebook-official"/>
@@ -172,12 +149,7 @@ export default class AboutUs extends Component{
                                         <p className="title">
                                             Backend Developer
                                         </p>
-                                        <p className="description">
-                                            Aenean tortor est, vulputate quis leo in, vehicula
-                                            rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus
-                                            est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper
-                                            massa.
-                                        </p>
+                                      
                                         <div className="social">
                                             <a href="#">
                                                 <i className="fa fa-facebook-official"/>
