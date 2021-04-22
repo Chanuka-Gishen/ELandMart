@@ -243,7 +243,7 @@ export default class Validate extends Component {
               </td>
             </tr>
           </table>
-          <h3>Price predicting limited Galle Area.........</h3>
+          <h3>Price predicting limited To Galle Area.........</h3>
         </div>
       );
     }
