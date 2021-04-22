@@ -79,32 +79,6 @@ export default class Validate extends Component {
           this.state.year,
         ]),
       });
-<<<<<<< Updated upstream
-      fetch("https://e-landmart-api.herokuapp.com/valuate/get_valuate_inputs/", {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify([this.state.distanceToRoad, this.size, "2020"]),
-      });
-      const predicted_value = axios.get("https://e-landmart-api.herokuapp.com/valuate/give_predictions/");
-      fetch("https://e-landmart-api.herokuapp.com/valuate/get_valuate_inputs/", {
-        method:"POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-            'size': this.state.size,
-            'land_type': this.state.type,
-            'distance_to_town': this.state.distanceToRoad,
-            'calculate_year': this.state.year,
-            'lane' : this.state.lane,
-            'predicted_value' : this.predicted_value
-        }),
-      });
-=======
       fetch(
         "https://e-landmart-api.herokuapp.com/valuate/get_valuate_inputs/",
         {
@@ -120,7 +94,6 @@ export default class Validate extends Component {
           ]),
         }
       );
->>>>>>> Stashed changes
 
       render(
         <ResultPage
