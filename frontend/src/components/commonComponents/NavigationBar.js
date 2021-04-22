@@ -112,7 +112,7 @@ export default class NavigationBar extends Component {
                                     <a
                                         className="nav-link"
                                         href={'/siteMap'}>
-                                            Site Map
+                                            Recent Predictions
                                     </a>
                                 </li>
                             </ul>

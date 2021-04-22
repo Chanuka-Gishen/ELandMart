@@ -20,9 +20,9 @@ export default class AboutUs extends Component{
                     <div>
                         <NavigationBar/>
                         <div className="container">
-                            <div className="intro" style={{top:'10'}}>
+                            <div className="intro" style={{marginTop:'8%'}}>
                                 <h2 className="text-center">ABOUT US</h2>
-                                <p className="text-center">ABOUT US</p>
+
                             </div>
                             <div className="row people">
                                 <div className="col-md-6 col-lg-4 item">
