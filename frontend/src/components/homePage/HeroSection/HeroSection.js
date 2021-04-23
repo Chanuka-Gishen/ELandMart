@@ -5,7 +5,7 @@ import '../../../assets/homePageAssets/HeroSection.css';
 
 function HeroSection() {
   return (
-    <div id = "background-img" style = {{marginLeft:'-12%',marginright:'-12%'}}>
+    <div id = "background-img" style = {{marginLeft:'-8%',marginright:'-12%'}}>
     <div className='hero-container'>
       {/* <video src='/videos/video-2.mp4' autoPlay loop muted /> */}
       <h1>&nbsp;&nbsp;&nbsp;&nbsp;Welcome to E-Land Mart</h1>
