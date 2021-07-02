@@ -38,16 +38,7 @@ export default class Footer extends Component{
                                     <li><a href="contactUs">Contacts</a></li>
                                 </ul>
                             </div>
-                            <div className="col-sm-6 col-md-2">
-                                <h5>Support</h5>
-                                <ul>
-                                    <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">Help Desk</a></li>
-                                    <br></br>
-                                    <li><a href="#">Forums</a></li>
-                                    <li><a href="#">External Links</a></li>
-                                </ul>
-                            </div>
+                            
                             <div className="col-md-3 social-networks">
                                 <div></div>
                                 <a

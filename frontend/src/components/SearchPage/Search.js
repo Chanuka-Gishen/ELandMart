@@ -39,21 +39,21 @@ const FeaturesPage = () =>  {
             <div class="tab-pane active" id="home">
               <iframe class= "responsive-iframe"
                 id="lankaPro"
-                src= {getLankaUrl}
+                src= "https://www.lankapropertyweb.com/"
                 height="500px"
                 width="100%"
               ></iframe>
             </div>
             <div class="tab-pane active" id="profile">
               <iframe
-                src={getCeylonUrl}
+                src="https://ceylonproperty.lk/"
                 height="500px"
                 width="100%"
               ></iframe>
             </div>
             <div class="tab-pane active" id="messages">
               <iframe
-                src={getIkmanlkUrl}
+                src="https://ikman.lk/"
                 height="500px"
                 width="100%"
               ></iframe>
